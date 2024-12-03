@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 45: 02/01/22</title>
+</head>
+<body>
+    <h1>Chapter 45: Events: link</h1>
+    <script>
+    console.log("Chapter 45")
+    console.log("User actions, such as clicking, are called events")
+   </script> 
+   <a href="#" onClick="alert('Hi');">Click</a>
+   <br>
+   <a href="JavaScript:void(0)" onClick="alert('Hi again');">Click(2)</a>
+   <br>
+   <a href="JavaScript:void(0)" onClick="var greet='Hello';alert(greet);">Click(3) - Using a variable this time</a>
+
+   <script>
+    function popup(message) {
+        alert(message);
+    }
+    </script>
+<br>
+    <a href="JavaScript:void(0)" onClick="popup('Hello again');">Click(4) - Using a function this time and calling it</a>
+
+
+</body>
+</html>

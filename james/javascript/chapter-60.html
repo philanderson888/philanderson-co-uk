@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 60: 19/2/22</title>
+</head>
+<body>
+    <h1>Chapter 60: The DOM: Finding children</h1>
+
+
+    <body> id="body"
+        <div id="cal">
+        <div id="email">
+            emaildiv
+        </div>
+
+    </body>
+    <script>
+        console.log("Chapter 60")
+        // Target an element by specifying its id
+        var eField = document.getElementById("email");
+
+        // Make an array-like collection of certain elements in the document.
+        var eField2 = document.getElementsByTagName("para");
+        // By doing this, you can target any paragraph within the collection
+        //var insideParagraph = p[2].innerHTML;
+
+        // An alternate way of doing this is to make a div as the document
+        var cal = document.getElementById("cal");
+        var p = cal.getElementsByTagName("p");
+         var insideParagraph = p[2].innerHTML;
+
+    //To read the last paragraph in the markup, you would write
+
+        console.log("Child nodes of cal " + cal.childNodes)
+        var contents = cal[4];
+    </script>
+    <!--Say you had this markup-->
+            <p>Southern Cal is sunny.</p>
+            <p>Northern Cal is rainy.</p>
+            <p>Eastern Cal is desert.</p>
+            <p>Western Cal is desert.</p>
+        </div>
+        <div id="ny">
+            <p>Urban NY is crowded.</p>
+            <p id="para">Rural NY is sparse.</p>
+            <!--The code after is just above this-->
+        </div>
+</body> 
+</html>

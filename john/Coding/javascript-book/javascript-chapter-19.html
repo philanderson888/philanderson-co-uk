@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 19</title>
+</head>
+<body>
+    <h1>Chapter 19: for loops</h1>
+    <h2>June 26th 2023</h2>
+    <div id="chapter-19"></div>
+    <script>
+        var cleanestCities = ["cheyenne", "santa fe", "tucson", "great falls", "honolulu"];
+        var cityToCheck = prompt("What is your city?");
+        console.log(cleanestCities)
+        cityToCheck = cityToCheck.toLowerCase()
+        console.log("you entered " + cityToCheck)
+        var matchFound = false;
+        for (var i = 0; i <= 4; i++) {
+            if (cityToCheck === cleanestCities[i]) {
+                matchFound = true;
+                alert("It's one of the cleanest cities")
+                chapter19Output = "It's one of the cleanest cities."
+                console.log(cityToCheck + " is on the list of cleanest cities")
+                break
+            }
+        }
+        if (matchFound === false) {
+        alert("Its not on the list of cleanest cities");
+        chapter19Output = "Its not on the list of cleanest cities."
+        console.log(cityToCheck + " is not on the list")
+        }
+
+        chapter19 = document.getElementById("chapter-19")
+        chapter19.innerText = chapter19Output 
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 27</title>
+</head>
+<body>
+    <h1>Chapter 27: random numbers</h1>
+    <h2>August 22nd 2021</h2>
+    <div id="chapter-27"></div>
+    <div id="chapter-27b"></div>
+    <div id="chapter-27c"></div>
+    <div id="chapter-27d"></div>
+    <div id="chapter-27e"></div>
+
+
+
+    <script>
+        for (let i = 0; i < 1; i++){
+            var randomNumber = Math.random();
+            console.log(`a random number is ${randomNumber}` )    
+        }
+        console.log("  ");
+        let maxNumber = 10;
+        console.log(`Generating random numbers between 1 - ${maxNumber}`);
+       // for (let i = 0; i < 1; i++){
+            let bigDecimal = Math.random();
+            console.log(`a random number is ${bigDecimal}`)
+            let improvedNum = (bigDecimal * maxNumber) + 0.01;
+            console.log(`a bigger number is ${improvedNum}`)
+            let numberOfStars = Math.round(improvedNum);
+            console.log(`a bigger number rounded is ${numberOfStars}`)
+            console.log("  ");
+
+    //   }
+
+       document.getElementById("chapter-27").innerHTML = 'a random number is ' + randomNumber + "<br></br>"
+       document.getElementById("chapter-27b").innerHTML = 'generating random numbers between 1 - ' + maxNumber + "<p></p>"
+       document.getElementById("chapter-27c").innerText = 'a random number is ' + bigDecimal
+       document.getElementById("chapter-27d").innerText = 'a bigger number is ' + improvedNum
+       document.getElementById("chapter-27e").innerText = 'a bigger number rounded is ' + numberOfStars
+
+       // a random number is 0.9939241886362702
+
+       // generating random numbers between 1 - 10
+       // a random number is 0.027448328459359184
+       // a bigger number is 0.28448328459359185
+       // a bigger number rounded is 0
+    </script>
+</body>
+</html>

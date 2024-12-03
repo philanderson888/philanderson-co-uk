@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 28</title>
+</head>
+<body>
+    <h1>Chapter 28: Converting strings to integers and decimals</h1>
+    <script>
+    console.log("Chapter 28:Converting strings to integers and decimals")
+    let currentAge = prompt("Enter your age.");
+    let yearsEligibleToPlay = currentAge - 18;
+    
+    console.log("using parseInt to convert currentAge to a string so using + doesnt concatenate it.")
+    //let currentAge = prompt("Enter your age.");
+    //let yearsEligibleToPlay = parseInt(currentAge) + 1;    
+
+    var myNumber = parseInt("1.999");
+    console.log("parseInt makes it 1 not 2 it doesnt round")
+    var myNumber = parseFloat("1.999"); 
+    console.log("parseFloat makes it 1.999")
+    console.log(myNumber)
+    console.log(yearsEligibleToPlay)
+   </script> 
+</body>
+</html>

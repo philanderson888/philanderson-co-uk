@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <h1>Chapter 24:Strings</h1>
+    <h2>August 8th 2021</h2>
+    <div id="chapter-24a"></div>
+    <div id="chapter-24"></div>
+    <div id="chapter-24p1"></div>
+    <div id="chapter-24p2"></div>
+    <div id="chapter-24p3"></div>
+    <script>
+        console.log("this is a string")
+        var firstname = `John`
+        var firstChar = firstname.slice(0, 1);
+        var secondChar = firstname.slice(1, 2);
+        console.log(`the first character of ${firstname} is ${firstChar} and the second character is ${secondChar}`)
+        printOut1 = `the first character of ${firstname} is ${firstChar} and the second character is ${secondChar}`
+        var firstChar2 = firstname.charAt(0);
+        console.log(`the first character of ${firstname} is ${firstChar2}, using .charAt()`)
+        printOut2 = `the first character of ${firstname} is ${firstChar2}, using .charAt()`
+        var lastChar = firstname.charAt(firstname.length - 1);
+        printOut3 = ` the last character of ${firstname} is ${lastChar}`
+        var text = "Hello! I'm John"
+        text = text.bold()
+
+        for (var i = 0; i < text.length; i++) { 
+          if (text.charAt(i) === "!") {
+            chapter24Output = "Exclamation point found in text at char " + i
+            break;  
+          }
+        }
+
+        let character = prompt("Enter the number of the character you want to show, from text")
+        
+        for (var n = 0; n < text.length; n++) {
+          if (text.charAt(n) === parseInt(character)) {
+            chapter24Output2 = "The Character you picked from text is " + text.charAt(n)
+          }
+          else {
+            chapter24Output2 = "oUTPUT"
+          }
+
+        }
+
+        chapter24s = document.getElementById("chapter-24a")
+        chapter24s.innerHTML = "text is: " + text
+        chapter24 = document.getElementById("chapter-24")
+        chapter24.innerText = chapter24Output
+        printOut = document.getElementById("chapter-24p1")
+        printOut.innerText = printOut1
+        printOuta = document.getElementById("chapter-24p2")
+        printOuta.innerText = printOut2
+        printOutb = document.getElementById("chapter-24p3")
+        printOutb.innerText = printOut3
+        console.log("hello " + chapter24Output2)
+        console.log(text);
+        console.log(n)
+        console.log(text.length)
+        console.log(text.charAt(n))
+    </script>
+</body>
+</html>

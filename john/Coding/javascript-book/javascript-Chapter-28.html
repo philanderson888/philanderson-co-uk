@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 28</title>
+</head>
+<body>
+    <h1>Chapter 28: Converting strings</h1>
+    <h2>August 23rd 2021</h2>
+    <div id="chapter-28"></div>
+    <div id="chapter-28b"></div>
+    <div id="chapter-28c"></div>
+    <div id="chapter-28d"></div>
+    <div id="chapter-28e"></div>
+    <div id="chapter-28f"></div>
+    <div id="chapter-28g"></div>
+    <div id="chapter-28h"></div>
+    <script>
+
+       let currentAge = prompt("Enter your age.")
+       console.log(`your current age is  ${currentAge}`)
+
+        let yearsEligibleToVote = currentAge - 18;
+        console.log(`years eligible to vote = ${yearsEligibleToVote}`);
+
+        let profit = "200" + "150";
+        console.log(`"200" + "150" = ${profit}`)
+
+        let profit2 = "200" - "duck";
+        console.log(`"200" - "duck" = ${profit2}`)
+
+        let profit3 = "200" + 150;
+        console.log(`"200" + 150 = ${profit3}`)
+
+        let profit4 = 200 + 150
+        console.log(`200 + 150 = ${profit4}`)
+
+        let qualifyingAge = currentAge + 1;
+        console.log(`qualifying Age(currentAge + 1) = ${qualifyingAge}`);
+
+        let qualifyingAge2 = parseInt(currentAge) + 1;
+        console.log(`qualifying Age(parseInt(currentAge) + 1) = ${qualifyingAge2}`);
+        
+
+
+
+        chapter28 = document.getElementById("chapter-28")
+        chapter28.innerText = "your current age is " + currentAge
+
+        chapter28b = document.getElementById("chapter-28b")
+        chapter28b.innerText = `years eligible to vote = ${yearsEligibleToVote}`
+
+        chapter28c = document.getElementById("chapter-28c")
+        chapter28c.innerText = `"200" + "150" = ${profit}`
+
+        chapter28d = document.getElementById("chapter-28d")
+        chapter28d.innerText = `"200" - "duck" = ${profit2}`
+
+        chapter28e = document.getElementById("chapter-28e")
+        chapter28e.innerText = `"200" + 150 = ${profit3}`
+
+        chapter28f = document.getElementById("chapter-28f")
+        chapter28f.innerText = `200 + 150 = ${profit4}`
+
+        chapter28g = document.getElementById("chapter-28g")
+        chapter28g.innerText = `qualifying Age(currentAge + 1) = ${qualifyingAge}`
+
+        chapter28h = document.getElementById("chapter-28h")
+        chapter28h.innerText = `qualifying Age(parseInt(currentAge) + 1) = ${qualifyingAge2}`
+        
+        // Prompt: What is your current age? (15)
+        // your current age is 15
+        // years eligible to vote = -3
+        // "200" + "150" = 200150
+        // "200" - "duck" = NaN
+        // "200" + 150 = 200150
+        // 200 + 150 = 350
+        // qualifying Age(currentAge + 1) = 151
+        // qualifying Age(parseInt(currentAge) + 1) = 16  
+    </script>
+</body>
+</html>

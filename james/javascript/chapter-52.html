@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 52: 5/2/22</title>
+</head>
+<body>
+
+    <style>
+        .hidden {display: none;}
+    </style>
+
+    <h1>Chapter 52: Manipulating images and text</h1>
+    <div id="hide"></div>
+    <div id="p1"></div>
+    <script>
+        console.log("Chapter 52")
+        let x = "This is an ugly animal. Click on it to get rid of it."
+          
+        function makeInvisible() {
+            document.getElementById("ugly").className = "hidden";
+        }
+        
+
+    </script>
+    <img src="https://i0.wp.com/www.wonderslist.com/wp-content/uploads/2016/04/Proboscis-Monkey.jpg" id="ugly" onClick="makeInvisible()">
+    
+
+    <script>
+     document.getElementById("hide").innerText = x
+    </script>
+</body> 
+</html> 
+    <!--How to add a class to an element whilst keeping the existing classes.-->
+ 
+       <script>
+        function makeBig() {
+            document.getElementById("p1").className += " big";
+        }
+        // A space before the class name is needed and its += not =.
+    </script>
+</body> 
+</html> 

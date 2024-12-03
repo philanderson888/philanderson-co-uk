@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 21</title>
+</head>
+<body>
+    <h1>Chapter 21: Changing case</h1>
+    <script>
+    console.log("Chapter 21: Changing case")
+    console.log("Using .toLowerCase to read everything to lowercase")
+    
+    let streetToCheck = prompt("Enter your street");
+    streetToCheck = streetToCheck.toLowerCase();
+    let cleanestStreets = ["High road","Station Rd","Main street","Victoria Rd","Kings Rd"]
+    for (let i = 0; i <= 4; i++) {
+        if (streetToCheck === cleanestStreets[i]) {
+            console.log("Its one of the cleanest streets")
+        }
+    }
+
+    console.log("Using .toUpperCase to read everything in Uppercase")
+
+    let streetToCheck = prompt("Enter your street");
+    streetToCheck = streetToCheck.toUpperCase();
+    let cleanestStreets = ["High road","Station Rd","Main street","Victoria Rd","Kings Rd"]
+    for (let i = 0; i <= 4; i++) {
+        if (streetToCheck === cleanestStreets[i]) {
+            console.log("Its one of the cleanest streets")
+        }
+    }
+
+   </script> 
+</body>
+</html>

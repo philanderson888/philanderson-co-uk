@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 26: Rounding</title>
+</head>
+<body>
+   <h1>Chapter 26: Rounding</h1>
+  <p><em>August 22, 2021</em></p>
+  <div id="chapter-26"></div>
+  <div id="chapter-26a"></div>
+  <div id="chapter-26b"></div>
+  <div id="chapter-26c"></div>
+  <div id="chapter-26d"></div>
+  <div id="chapter-26e"></div>
+  <div id="chapter-26f"></div>
+  <div id="chapter-26g"></div>
+  <div id="chapter-26h"></div>
+
+
+   <script>
+      var scoreAvg = 106.34
+      var numberOfStars = Math.round(scoreAvg);
+      console.log(scoreAvg + " rounded is " + numberOfStars);
+      printOut1 = `${scoreAvg} rounded is ${numberOfStars}, using Math.round()`
+      var smallNumber = 0.001
+      var beans = Math.ceil(smallNumber);
+      console.log(smallNumber + " rounded up to the nearest integer is " + beans);
+      printOut2 = `${smallNumber} rounded up to the nearest integer is ${beans}`
+      var decimalNumber = 10.9
+      var eggs = Math.floor(decimalNumber);
+      console.log(decimalNumber + " rounded down to the nearest integer is " + eggs);
+      printOut3 = `${decimalNumber} rounded down to the nearest integer is ${eggs}`
+      let bigNumber = 249
+      let roundedUp = 100*Math.round(bigNumber/100)
+      console.log(`${bigNumber} rounded up to nearest 100 is ${roundedUp}`)
+      printOut4 = `${bigNumber} rounded up to nearest 100 is ${roundedUp}`
+
+      console.log("------   ")
+      var yourNumber = prompt("Enter a  decimal number, and I will round it:")
+
+      let yourNumberRounded1 = Math.round(yourNumber)
+      console.log("Your number rounded to the nearest integer is " + yourNumberRounded1)
+      let yourNumberRounded2 = Math.ceil(yourNumber)
+      console.log("Your number rounded up to the nearest integer is " + yourNumberRounded2)
+      let yourNumberRounded3 = Math.floor(yourNumber)
+      console.log("Your number rounded down to the nearest integer is " + yourNumberRounded3)
+      let yourNumberRounded4 = 100*Math.round(yourNumber/100)
+      console.log("Your number rounded to the nearest 100 is " + yourNumberRounded4)
+
+      yourNumber = parseInt(yourNumber)
+      yourNumberRounded5 = yourNumber.toPrecision(3)
+      console.log("Your number rounded to 3 S.F is " + yourNumberRounded5)
+
+
+
+
+
+
+      chapter26 = document.getElementById("chapter-26")
+      chapter26.innerText = printOut1
+      chapter26a = document.getElementById("chapter-26a")
+      chapter26a.innerText = printOut2
+      chapter26b = document.getElementById("chapter-26b")
+      chapter26b.innerText = printOut3
+      chapter26c = document.getElementById("chapter-26c")
+      chapter26c.innerHTML = printOut4 + "<p></p>"
+
+      chapter26d = document.getElementById("chapter-26d")
+      chapter26d.innerText = "Your number rounded to the nearest integer is " + yourNumberRounded1
+      chapter26e = document.getElementById("chapter-26e")
+      chapter26e.innerText = "Your number rounded up to the nearest integer is " + yourNumberRounded2
+      chapter26f = document.getElementById("chapter-26f")
+      chapter26f.innerText = "Your number rounded down to the nearest integer is " + yourNumberRounded3
+      chapter26g = document.getElementById("chapter-26g")
+      chapter26g.innerText = "Your number rounded to the nearest 100 is " + yourNumberRounded4
+      chapter26h = document.getElementById("chapter-26h")
+      chapter26h.innerText = "Your number rounded to 3 S.F is " + yourNumberRounded5
+   </script> 
+</body>
+</html>

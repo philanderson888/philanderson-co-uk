@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3 id="playerText">Player 1</h3>
+
+    <input type="button" value="" id="box01" style="height: 100px; width:100px; margin:10;"
+    onclick="box01Clicked()">
+
+    <input type="button" value="" id="box02" style="height: 100px; width:100px"
+    onclick="box02Clicked()">
+    
+    <input type="button" value="" id="box03" style="height: 100px; width:100px"
+    onclick="box03Clicked()">
+
+ <br>
+ 
+    <input type="button" value="" id="box04" style="height: 100px; width:100px"
+    onclick="box04Clicked()">
+
+    <input type="button" value="" id="box05" style="height: 100px; width:100px"
+    onclick="box05Clicked()" > 
+
+    <input type="button" value="" id="box06" style="height: 100px; width:100px"
+    onclick="box06Clicked()">
+
+ <br>
+ 
+    <input type="button" value="" id="box07" style="height: 100px; width:100px"
+    onclick="box07Clicked()">
+
+    <input type="button" value="" id="box08" style="height: 100px; width:100px"
+    onclick="box08Clicked()">
+
+    <input type="button" value="" id="box09" style="height: 100px; width:100px"
+    onclick="box09Clicked()">
+
+<script>
+        
+  // initialise
+
+ let player = "player1";
+ 
+ 
+ 
+ function switchplayer() {
+    if (player=="Player 1")
+    {
+        player="Player 2";
+    }
+    else if (player=="Player 2") {
+        player="Player 1";
+    } 
+ }
+
+
+        playerText = document.getElementById("playerText")
+        console.log(playerText)
+    box01 = document.getElementById("box01")
+    box01Clicked = () => {
+        console.log("Player 1 clicked")
+        box01.value = 'X';
+        switchplayer()
+        playerText.innerText = "Player 2"
+        if (playerText.innerText = "Player 2")
+            box01.value = 'O';
+    }
+
+    playerText = document.getElementById("playerText")
+        console.log(playerText)
+    box02 = document.getElementById("box02")
+    box02Clicked = () => {
+        console.log("Player 2 clicked")
+        box02.value = 'O';
+        switchplayer()
+        playerText.innerText = "Player 1"
+
+        if (playerText.innerText = "Player 1")
+            box02.value = 'X';
+    }
+
+    playerText = document.getElementById("playerText")
+        console.log(playerText)
+    box03 = document.getElementById("box03")
+    box03Clicked = () => {
+        console.log("Player 1 clicked")
+        box03.value = 'X';
+        switchplayer()
+        playerText.innerText = "Player 2"
+
+        if (playerText.innerText = "Player 2")
+            box03.value = 'O';
+    }
+
+    playerText = document.getElementById("playerText")
+        console.log(playerText)
+    box04 = document.getElementById("box04")
+    box04Clicked = () => {
+        console.log("Player 2 clicked")
+        box04.value = 'O';
+        switchplayer()
+        playerText.innerText = "Player 1"
+
+        if (playerText.innerText = "Player 1")
+            box04.value = 'X';
+    }
+
+    playerText = document.getElementById("playerText")
+        console.log(playerText)
+    box05 = document.getElementById("box05")
+    box05Clicked = () => {
+        console.log("Player 1 clicked")
+        box05.value = 'X';
+        switchplayer()
+        playerText.innerText = "Player 2"
+
+        if (playerText.innerText = "Player 2")
+            box05.value = 'O';
+    }
+
+    playerText = document.getElementById("playerText")
+        console.log(playerText)
+    box06 = document.getElementById("box06")
+    box06Clicked = () => {
+        console.log("Player 2 clicked")
+        box06.value = 'O';
+        switchplayer()
+        playerText.innerText = "Player 1"
+
+        if (playerText.innerText = "Player 1")
+            box06.value = 'X';
+    }
+
+    playerText = document.getElementById("playerText")
+        console.log(playerText)
+    box07 = document.getElementById("box07")
+    box07Clicked = () => {
+        console.log("Player 1 clicked")
+        box07.value = 'X';
+        switchplayer()
+        playerText.innerText = "Player 2"
+
+        if (playerText.innerText = "Player 2")
+            box07.value = 'O';
+    }
+
+    playerText = document.getElementById("playerText")
+        console.log(playerText)
+    box08 = document.getElementById("box08")
+    box08Clicked = () => {
+        console.log("Player 2 clicked")
+        box08.value = 'O';
+        switchplayer()
+        playerText.innerText = "Player 1"
+
+        if (playerText.innerText = "Player 1")
+            box08.value = 'X';
+    }
+
+    playerText = document.getElementById("playerText")
+        console.log(playerText)
+    box09 = document.getElementById("box09")
+    box09Clicked = () => {
+        console.log("Player 1 clicked")
+        box09.value = 'X';
+        switchplayer()
+        playerText.innerText = "Player 2"
+        if (playerText.innerText = "Player 2")
+            box09.value = 'O';
+    }
+
+    </script>
+</body>
+</html>

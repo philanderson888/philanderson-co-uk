@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12</title>
+</head>
+<body>
+    <h1>Chapter 12: If, else and else if statements</h1>
+    <h2>June 26th 2023</h2>
+    <div id="chapter-12"></div>
+    <script>
+        var x = prompt("Where does the pope live? (Vatican, Rome, London)");
+        x = x.toLowerCase()
+        if (x === "vatican"){
+            alert("Correct!");
+            chapter12Output = "Correct!"
+        }
+        else if (x === "rome") {
+            alert("Incorrect, but close.");
+            chapter12Output = "Incorrect, but close.";
+        }
+        else {
+            alert("Incorrect");
+            chapter12Output = "Incorrect. The Pope lives in Vatican"
+        }
+
+        chapter12 = document.getElementById("chapter-12")
+        chapter12.innerText = chapter12Output
+
+    </script>
+</body>
+</html>

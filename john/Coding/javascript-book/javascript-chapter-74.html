@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 74</title>
+</head>
+<body>
+    <h1>Chapter 74: Objects: Prototypes</h1>
+    <h2>February 16th - 17th 2022</h2>
+<script>
+    Plan.prototype.calcAnnual = function(percentIfDisc) {
+        var bestPrice = this.price;
+        var currDate = new Date();
+        var theMo = currDate.getMonth();
+        for (var i = 0; i < this.discountMonths.length; i++)
+    {
+            if (this.discountMonths[i] === theMo) {
+                bestPrice = this.price * percentIfDisc;
+                break;
+            }
+    }
+        return bestPrice * 12;
+    }
+    Plan.prototype.cancellable = true;
+</script>
+</body>
+</html>

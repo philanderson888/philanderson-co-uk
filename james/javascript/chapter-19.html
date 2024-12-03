@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 19</title>
+</head>
+<body>
+    <h1>Chapter 19: for loops: Flags, boolean, array length and loopus interrupts</h1>
+    <script>
+    console.log("Chapter 19: for loops: Flags, boolean, array length and loopus interrupts")
+    let cleanestHouses = ["a", "b", "c"]
+    let cityToCheck = "a";
+      console.log(cleanestHouses)
+
+    let matchfound = "no";
+    for (var i = 0; i <= 4; i++) {
+      if (cityToCheck === cleanestHouses[i]) {
+        matchfound = "yes";
+          console.log("Its one of the cleanest houses");
+      }
+    }
+    if (matchfound = "no") {
+      console.log("Its not on the list"); 
+    }
+    
+console.log("Boolean operators: True and False")
+
+    let matchfound2 = false;
+    for (var i = 0; i <= 4; i++) {
+      if (cityToCheck === cleanestHouses[i]) {
+        matchfound2 = true;
+          console.log("Its one of the cleanest houses");
+      }
+    }
+    if (matchfound2 = false) {
+      console.log("Its not on the list"); 
+    }
+
+    console.log("Using break to stop loop going until the end because you already have the answer")
+
+    let matchfound3 = false;
+      for (var i = 0; i <= 4; i++) {
+        if (cityToCheck === cleanestHouses[i]) {
+          matchfound3 = true;
+          console.log("Its one of the cleanest houses");
+          break;
+        }
+      }
+      if (matchfound3 === false) {
+        console.log("Its not on the list");
+      }
+      
+      console.log("Using .length to limit the number of loops")
+
+      let numElements = cleanestHouses.length;
+      let matchfound4 = false;
+      for (var i = 0; i <= numElements; i++) {
+        if (cityToCheck === cleanestHouses[i]) {
+          matchfound4 = true;
+          console.log("Its one of the cleanest houses");
+          break;
+        }
+      }
+      if (matchfound4 === false) {
+        console.log("Its not on the list")
+      }
+   </script> 
+</body>
+</html> 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Working clock</title>
+    <style>
+        div {
+            font-size: 100px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="clock">this is a clock</div>
+    <script>
+
+        rightNow = new Date();
+        console.log(`right now the date is ${rightNow}`);
+
+function printTime () {
+            now = new Date();
+            month = now.getUTCMonth()+1;
+            year = now.getFullYear();
+            date = now.getDate();
+            hour = now.getHours();
+            minute = now.getMinutes();
+            seconds = now.getSeconds();
+            time = `the time now is ${hour}:${minute}:${seconds}`;
+            console.log(time);
+            console.log();
+            document.getElementById("clock").innerText = time;
+
+        }
+        setInterval(printTime,1000)
+    </script>
+</body>
+</html>

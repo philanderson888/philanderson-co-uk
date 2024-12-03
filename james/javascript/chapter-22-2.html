@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chapter 30 - Length Of Decimals</h1>
+    <div id="answer01"></div>
+    <div id="answer02"></div>
+    <div id="putStuffHere">….nothing here….</div>
+    <script>
+        let price = 9
+        
+        // same thing 
+        let taxRate = 6.5/100
+        taxRate = 0.065
+
+        // print out price
+        console.log(`the price of an item is ${price}`);
+        // print out tax rate
+        console.log(`the tax rate is ${taxRate}`);
+        // print out price including tax 
+        let total = price + (price * taxRate);
+        console.log(`the total price with tax is ${total}`);
+        let answer01 = `total = ${total}`
+        document.getElementById('answer01').innerText = answer01
+
+        // make it look pretty 
+        let prettyTotal = 10.56675
+        prettyTotal = total.toFixed(1);
+        console.log(`the total price rounded to 1 D.P is ${prettyTotal}`);
+        let answer02 = `Rounded total = ${prettyTotal}`
+        document.getElementById('answer02').innerText = answer02
+
+
+        var x = 1
+        var y = 2
+        var z = x * y
+        let output = `${x} * ${y} = ${z}`       
+        console.log(output)
+        // now put this on the page
+        document.getElementById("putStuffHere").innerText = output
+    </script>
+</body>
+</html>

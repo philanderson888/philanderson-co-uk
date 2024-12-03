@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 36</title>
+</head>
+<body>
+    <h1>Chapter 36: Greetings</h1>
+    <h2>August 31st 2021</h2>
+    <div id="chapter-36"></div>
+    <div id="chapter-36b"></div>
+    <div id="chapter-36c"></div>
+    <div id="chapter-36d"></div>
+    <div id="chapter-36f"></div>
+    <div id="chapter-36e"></div>
+
+
+    <script>
+
+        // let greeting = ("Hello There person.");
+
+      //  function greetUser(greeting) {
+    //        console.log(greeting);
+    //    }
+
+   //     greetUser(greeting);
+
+        let a = 10
+        let b = 20
+
+        function addNumbers(a, b) {
+            let total = a + b
+            console.log(`a = 10`)
+            chapter36Output = "a = 10"
+            console.log(`b = 20`)
+            chapter36Outputb = "b = 20"
+            console.log(`total is a + b`)
+            chapter36Outputc = "total is 'a + b'"
+            console.log(`the total is ${total}`)
+            chapter36Outputd = "the total is " + total
+            console.log(`This is all in a function`)
+            chapter36Outputf = "This is all in a function" + "<br></br>"
+
+            chapter36 = document.getElementById("chapter-36")
+            chapter36.innerText = chapter36Output
+            chapter36b = document.getElementById("chapter-36b")
+            chapter36b.innerText = chapter36Outputb
+            chapter36c = document.getElementById("chapter-36c")
+            chapter36c.innerText = chapter36Outputc
+            chapter36d = document.getElementById("chapter-36d")
+            chapter36d.innerText = chapter36Outputd
+            chapter36f = document.getElementById("chapter-36f")
+            chapter36f.innerHTML = chapter36Outputf
+            
+        }
+
+            addNumbers(a, b);
+
+            let month = ("March");
+            
+            function showMessage() {
+            console.log(month + "'s winning number is", 23);
+            chapter36Outpute = month + "'s winning number is " + 23
+
+            chapter36e = document.getElementById("chapter-36e")
+            chapter36e.innerText = chapter36Outpute
+            }
+    
+          showMessage()
+
+
+
+    </script>
+
+    <!-- OUTPUT:
+        a = 10
+        b = 20
+        total is 'a + b'
+        the total is 30
+        This is all in a function
+
+        March's winning number is 23
+    -->
+</body>
+</html>

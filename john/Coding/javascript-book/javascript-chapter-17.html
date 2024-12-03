@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 17</title>
+</head>
+<body>
+    <h1>Chapter 17: Changing arrays</h1>
+    <h2>June 26th 2023</h2>
+    .pop - removes an element at the end of an array <br>
+    .push - adds an elements at the end of an array <br>
+    .shift - removes an element at the start of an array <br>
+    .unshift - adds an element at the start of an array <br>
+    .splice - inserts elements anywhere in the array, and can also remove elements that come after it. <br>
+    .slice - cuts an element from one array, removing it and copying it to another array <br> <p></p>
+       
+    pets = dog, cat, bird, snake, hamster <p></p>
+
+    <label>
+        Choose an action to change the array:
+        <select class="pets" name="pets">
+          <option value="">Select One..</option>
+          <option value=".pop">.Pop</option>
+          <option value=".push">.Push</option>
+          <option value=".shift">.Shift</option>
+          <option value=".unshift">.Unshift</option>
+          <option value=".splice">.Splice</option>
+          <option value=".slice">.Slice</option>
+        </select>
+      </label>
+      
+      <div class="result"></div>
+      <div id="pets"></div>
+    <script>
+        pets = ["dog", "cat", "bird", "snake", "hamster"]
+        // code for list
+        var selectElement = document.querySelector(".pets");
+        var result = document.querySelector(".result");
+        selectElement.addEventListener("change", (event) => {
+            let action = event.target.value
+            console.log("action chosen is " + action)
+            // code for each action chosen:
+            if (action === ".pop") {
+                pets = ["dog", "cat", "bird", "snake", "hamster"]
+                pets.pop();
+                console.log(pets)
+                chapter17Output = "\nthe new list is " + pets.join(", ")
+                chapter17 = document.getElementById("pets")
+                chapter17.innerText = chapter17Output
+            }
+            else if (action === ".push") {
+                pets = ["dog", "cat", "bird", "snake", "hamster"]
+                pets.push("pig");
+                console.log(pets)
+                chapter17Output ="\nthe new list is " + pets.join(", ")
+                chapter17 = document.getElementById("pets")
+                chapter17.innerText = chapter17Output
+            }
+            else if (action === ".shift") {
+                pets = ["dog", "cat", "bird", "snake", "hamster"]
+                pets.shift();
+                console.log(pets)
+                chapter17Output ="\nthe new list is " + pets.join(", ")
+                chapter17 = document.getElementById("pets")
+                chapter17.innerText = chapter17Output
+            }
+            else if (action === ".unshift") {
+                pets = ["dog", "cat", "bird", "snake", "hamster"]
+                pets.unshift("pig");
+                console.log(pets)
+                chapter17Output ="\nthe new list is " + pets.join(", ")
+                chapter17 = document.getElementById("pets")
+                chapter17.innerText = chapter17Output
+            }
+            else if (action === ".splice") {
+                pets = ["dog", "cat", "bird", "snake", "hamster"]
+                pets.splice(3, 1, "pig");
+                console.log("pets.splice(3, 1, pig);")
+                console.log(pets)
+                chapter17Output ="\nthe new list is " + pets.join(", ")
+                chapter17 = document.getElementById("pets")
+                chapter17.innerText = chapter17Output
+            }
+            else if (action === ".slice") {
+                pets = ["dog", "cat", "bird", "snake", "hamster"]
+                var newpets = pets.slice(1, 3);
+                console.log("new list is " + newpets)
+                console.log(pets)
+                chapter17Output ="\nthe new list is " + newpets.join(", ") + " (.slice(1, 3))"
+                chapter17 = document.getElementById("pets")
+                chapter17.innerText = chapter17Output
+            }
+        });
+
+        console.log("pets is "+ pets)
+
+    </script>
+</body>
+</html>

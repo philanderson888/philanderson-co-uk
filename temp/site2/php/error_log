@@ -1,0 +1,19 @@
+[28-Dec-2018 11:31:38 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /data01/c4290920/public_html/philip/site2/php/login.php on line 2
+[28-Dec-2018 11:31:42 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /data01/c4290920/public_html/philip/site2/php/login.php on line 2
+[28-Dec-2018 11:31:45 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /data01/c4290920/public_html/philip/site2/php/login.php on line 2
+[28-Dec-2018 11:32:06 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /data01/c4290920/public_html/philip/site2/php/login.php on line 2
+[28-Dec-2018 11:32:09 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /data01/c4290920/public_html/philip/site2/php/login.php on line 2
+[28-Dec-2018 11:33:55 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /data01/c4290920/public_html/philip/site2/php/login.php on line 2
+[28-Dec-2018 11:34:01 UTC] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /data01/c4290920/public_html/philip/site2/php/login.php on line 2
+[28-Dec-2018 11:34:05 UTC] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /data01/c4290920/public_html/philip/site2/php/login.php on line 2
+[28-Dec-2018 11:34:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /data01/c4290920/public_html/philip/site2/php/login.php:2) in /data01/c4290920/public_html/philip/site2/php/login.php on line 2
+[28-Dec-2018 11:35:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /data01/c4290920/public_html/philip/site2/php/login.php:2) in /data01/c4290920/public_html/philip/site2/php/login.php on line 2
+[28-Dec-2018 11:35:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /data01/c4290920/public_html/philip/site2/php/login.php:2) in /data01/c4290920/public_html/philip/site2/php/login.php on line 2
+[28-Dec-2018 11:36:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /data01/c4290920/public_html/philip/site2/php/login.php:2) in /data01/c4290920/public_html/philip/site2/php/login.php on line 1
+[28-Dec-2018 11:50:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /data01/c4290920/public_html/philip/site2/php/login.php:5) in /data01/c4290920/public_html/philip/site2/php/login.php on line 10
+[28-Dec-2018 11:50:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /data01/c4290920/public_html/philip/site2/php/login.php:5) in /data01/c4290920/public_html/philip/site2/php/login.php on line 10
+[28-Dec-2018 11:56:22 UTC] PHP Parse error:  syntax error, unexpected '}' in /data01/c4290920/public_html/philip/site2/php/login.php on line 10
+[28-Dec-2018 11:56:25 UTC] PHP Parse error:  syntax error, unexpected '}' in /data01/c4290920/public_html/philip/site2/php/login.php on line 10
+[28-Dec-2018 11:57:04 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /data01/c4290920/public_html/philip/site2/php/login.php on line 42
+[28-Dec-2018 11:57:56 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /data01/c4290920/public_html/philip/site2/php/login.php on line 8
+[28-Dec-2018 12:01:14 UTC] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) or '$' in /data01/c4290920/public_html/philip/site2/php/login.php on line 39

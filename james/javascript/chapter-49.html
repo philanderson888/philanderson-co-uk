@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 49: 3/2/22</title>
+</head>
+<body>
+    <h1>Chapter 49: Reading field values</h1>
+    <script>
+    console.log("Chapter 49")
+   </script> 
+   <form>
+     Email:
+     <input type="text" id="email">
+    <input type="submit" value="Submit">
+   </form>
+
+   <!--Using the keywork onSubmit-->
+   <form onSubmit;="checkAddress('email');">
+    Email:
+    <input type="text" id="email">
+   <input type="submit" value="Submit">
+   
+   <!--Using the id to read whats in the email field-->
+<script>
+   function checkAddress(fieldId) {
+     if (document.getElementById(fieldID).value === "") {
+       alert("Email address required.");
+     }
+   }
+</script>
+  </form>
+  <!--Or you could do it this way-->
+<script>
+  function checkAddress(fieldId) {
+    var val = document.getElementById(fieldId).value;
+      if (val === "") {
+        alert("Email address required")
+      }
+    }
+  </script>   
+</body>
+</html>

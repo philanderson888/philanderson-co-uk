@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 35</title>
+</head>
+<body>
+    <h1>Chapter 35: getting Time</h1>
+    <h2>August 30th 2021</h2>
+    <div id="chapter-35"></div>
+    <script>
+            let x = setInterval(function tellTime() {
+            let now = new Date();
+            let theHr = now.getHours();
+            let theMin = now.getMinutes();
+            let theSecs = now.getSeconds();
+                console.log(`the time is ${theHr}:${theMin}, ${theSecs} second(s)`)
+                let chapter35Output = `the time is ${theHr}:${theMin}, ${theSecs} second(s)`
+                chapter35 = document.getElementById("chapter-35")
+                chapter35.innerText = chapter35Output
+             }, 1000);
+            
+
+             
+
+    
+     </script>
+
+     <!--
+        OUTPUT:
+        the time is 16:43, 52 second(s)
+     -->
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 67</title>
+</head>
+<body>
+    <h1>Chapter 67: text nodes</h1>
+    <h2>January 8th 2022</h2>
+    <script>
+        var nodeToAdd = document.createElement("p");
+        var imgNodeToAdd = document.createElement("img");
+        nodeToAdd.setAttribute("class", "regular");
+        imgNodeToAdd.setAttribute("border","1");
+        var newText = document.createTextNode("Hello!");
+        nodeToAdd.appendChild(newText);
+    </script>
+</body>
+</html>

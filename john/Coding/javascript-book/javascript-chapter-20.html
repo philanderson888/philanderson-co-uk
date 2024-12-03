@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 20</title>
+</head>
+<body>
+    <h1>Chapter 20: for loops nested</h1>
+    <h2>27th July 2023</h2>
+    <div id="chapter-20"></div>
+    <script>
+        let firstNames = [" Blueray ", " Upchuck ", " Lojack ", " Gizmo ", " Do-rag "];
+        let lastNames = ["Anderson", "Burp", "Dogbone", "Droop"];
+        let fullNames = [];
+        for (var i = 0; i < firstNames.length; i++) {
+            for (var j = 0; j < lastNames.length; j++) {
+                fullNames.push(firstNames[i] + lastNames[j])
+            }
+        }
+        console.log(fullNames)
+        chapter20Output = fullNames
+        chapter20 = document.getElementById("chapter-20")
+        chapter20.innerHTML = chapter20Output.join("<br>")
+
+
+    </script>
+</body>
+</html>

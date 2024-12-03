@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 37</title>
+</head>
+<body>
+    <h1>Chapter 37: Functions: Passing data back to them</h1>
+    <div id="return"></div>
+    <div id="function"></div>
+    <script>
+    console.log("Chapter 37")
+    //This is where a global variable/scope is
+    function calcTot(merchTot) {
+        //This is where a local variable/scope is
+        var orderTot;
+        if (merchTot >= 100) {
+            //This is where a block variable/scope is
+            orderTot = merchTot;
+        }
+        else if (merchTot < 50.01) {
+            orderTot = merchTot + 5;
+        }
+        else {
+            orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+        }
+        return orderTot;
+    }
+
+    var x = "The return orderTot passes the result back to the calling code";
+    document.getElementById(`return`).innerText = x;
+    document.getElementById(`function`).innerText = calcTot;
+   </script> 
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2/4/22</title>
+</head>
+<body>
+    <div id="p1"></div>
+    <div id="div1" class="special"></div>
+    <h1>Chapter 65: The DOM: Attributes.</h1>
+    <script>
+        console.log("Chapter 65")
+        // Anything before the = sign is the attribute name, after is attribute value
+        console.log("You can find out whether an element has a particular attribute with hasAttribute")
+        var target = document.getElementById("p1");
+        var hasClass = target.hasAttribute("class");
+
+        console.log("You can read the value of an attribute with GetAttribute")
+        var target2 = document.getElementById("div1");
+        var attVal = target2.getAttribute("class");
+
+        console.log("You can set the value of an attribute with setAttribute")
+        var target3 = document.getElementById("div1");
+        var attVal = target3.setAttribute("class", "special")
+    </script>
+           <!-- Whenever you see this -->
+           <element x="xyz">
+           </element>
+            <!--Your looking at an element with an attribute-->
+
+        <!-- An element can have any number of attributes e.g img has 4: -->
+        <img src="dan.gif" alt="Dan" height="42" width="42">
+
+</body> 
+</html>

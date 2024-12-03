@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(0, 237, 255);
+}
+
+.grid-container {
+	width: 645px;
+  height: 645px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 17%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-item {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 6px;
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item" id="box01"><img id="box01image" src="" width="205" height="205" /></div>
+  <div class="grid-item" id="box02"><img id="box02image" src="" width="205" height="205" /></div>
+  <div class="grid-item" id="box03"><img id="box03image" src="" width="205" height="205" /></div>  
+  <div class="grid-item" id="box04"><img id="box04image" src="" width="205" height="205" /></div>
+  <div class="grid-item" id="box05"><img id="box05image" src="" width="205" height="205" /></div>
+  <div class="grid-item" id="box06"><img id="box06image" src="" width="205" height="205" /></div>  
+  <div class="grid-item" id="box07"><img id="box07image" src="" width="205" height="205" /></div>
+  <div class="grid-item" id="box08"><img id="box08image" src="" width="205" height="205" /></div>
+  <div class="grid-item" id="box09"><img id="box09image" src="" width="205" height="205" /></div>  
+</div>
+<div id="player"></div>
+<script>
+document.getElementById("player").innerHTML = "hello";
+// setup
+let player = 'player01'
+
+
+switchPlayer = () => {
+  if (player == 'player01') {
+    player = 'player02'
+  }
+  else if (player == 'player02') {
+    player = 'player01'
+  }
+console.log("Player switched to " + player)
+
+}
+
+// setup box01
+box01 = document.getElementById("box01")
+box01image = document.getElementById("box01image")
+box01image.style.display = "none"
+
+// setup box02
+box02 = document.getElementById("box02")
+box02image = document.getElementById("box02image")
+box02image.style.display = "none"
+
+// setup box03
+box03 = document.getElementById("box03")
+box03image = document.getElementById("box03image")
+box03image.style.display = "none"
+
+// setup box04
+box04 = document.getElementById("box04")
+box04image = document.getElementById("box04image")
+box04image.style.display = "none"
+
+// setup box05
+box05 = document.getElementById("box05")
+box05image = document.getElementById("box05image")
+box05image.style.display = "none"
+
+// setup box06
+box06 = document.getElementById("box06")
+box06image = document.getElementById("box06image")
+box06image.style.display = "none"
+
+// setup box07
+box07 = document.getElementById("box07")
+box07image = document.getElementById("box07image")
+box07image.style.display = "none"
+
+// setup box08
+box08 = document.getElementById("box08")
+box08image = document.getElementById("box08image")
+box08image.style.display = "none"
+
+// setup box09
+box09 = document.getElementById("box09")
+box09image = document.getElementById("box09image")
+box09image.style.display = "none"
+
+const scores = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+console.log("scores[0] is " + scores[0])
+console.log("scores[1] is " + scores[1])
+console.log("scores[2] is " + scores[2])
+console.log("scores[3] is " + scores[3])
+console.log("scores[4] is " + scores[4])
+console.log("scores[5] is " + scores[5])
+console.log("scores[6] is " + scores[6])
+console.log("scores[7] is " + scores[7])
+console.log("scores[8] is " + scores[8])
+
+doThisForBox01 = () => {
+  
+  console.log(`box 1 was clicked by ${player}`);
+  if (player == 'player01'){
+    box01image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-x-icon-18-256.png"
+    scores[0] = ("X");
+   }
+  else if (player == 'player02') {
+    box01image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-o-icon-18-256.png"
+    scores[0] = ("O");
+  }
+  box01image.style.display = "inline"
+  switchPlayer()
+  console.log(scores)
+  checkScores()
+}
+
+box01 = document.getElementById('box01');
+box01.addEventListener('click', doThisForBox01)
+
+
+
+doThisForBox02 = () => {
+  
+  console.log(`box 2 was clicked by ${player}`);
+  if (player == 'player01'){
+    box02image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-x-icon-18-256.png"
+    scores[1] = ("X");
+   }
+  else if (player == 'player02') {
+    box02image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-o-icon-18-256.png"
+    scores[1] = ("O");
+  }
+  box02image.style.display = "inline"
+  switchPlayer()
+  console.log(scores)
+  checkScores()
+ }
+
+box02 = document.getElementById('box02');
+box02.addEventListener('click', doThisForBox02)
+
+doThisForBox03 = () => {
+  
+  console.log(`box 3 was clicked by ${player}`);
+  if (player == 'player01'){
+    box03image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-x-icon-18-256.png"
+    scores[2] = ("X");
+   }
+  else if (player == 'player02') {
+    box03image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-o-icon-18-256.png"
+    scores[2] = ("O");
+  }
+  box03image.style.display = "inline"
+  switchPlayer()
+  console.log(scores)
+  checkScores()
+}
+
+box03 = document.getElementById('box03');
+box03.addEventListener('click', doThisForBox03)
+
+doThisForBox04 = () => {
+  console.log(`box 4 was clicked by ${player}`);
+  if (player == 'player01'){
+    box04image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-x-icon-18-256.png"
+    scores[3] = ("X");
+   }
+  else if (player == 'player02') {
+    box04image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-o-icon-18-256.png"
+    scores[3] = ("O");
+  }
+  box04image.style.display = "inline"
+  switchPlayer()
+  console.log(scores)
+  checkScores()
+}
+
+box04 = document.getElementById('box04');
+box04.addEventListener('click', doThisForBox04)
+
+doThisForBox05 = () => {
+  console.log(`box 5 was clicked by ${player}`);
+  if (player == 'player01'){
+    box05image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-x-icon-18-256.png"
+    scores[4] = ("X");
+   }
+  else if (player == 'player02') {
+    box05image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-o-icon-18-256.png"
+    scores[4] = ("O");
+  }
+  box05image.style.display = "inline"
+  switchPlayer()
+  console.log(scores)
+  checkScores()
+}
+
+box05 = document.getElementById('box05');
+box05.addEventListener('click', doThisForBox05)
+
+doThisForBox06 = () => {
+  console.log(`box 6 was clicked by ${player}`);
+  if (player == 'player01'){
+    box06image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-x-icon-18-256.png"
+    scores[5] = ("X");
+   }
+  else if (player == 'player02') {
+    box06image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-o-icon-18-256.png"
+    scores[5] = ("O");
+  }
+  box06image.style.display = "inline"
+  switchPlayer()
+  console.log(scores)
+  checkScores()
+}
+
+box06 = document.getElementById('box06');
+box06.addEventListener('click', doThisForBox06)
+
+doThisForBox07 = () => {
+  console.log(`box 7 was clicked by ${player}`);
+  if (player == 'player01'){
+    box07image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-x-icon-18-256.png"
+    scores[6] = ("X");
+   }
+  else if (player == 'player02') {
+    box07image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-o-icon-18-256.png"
+    scores[6] = ("O");
+  }
+  box07image.style.display = "inline"
+  switchPlayer()
+  console.log(scores)
+  checkScores()
+}
+
+box07 = document.getElementById('box07');
+box07.addEventListener('click', doThisForBox07)
+
+doThisForBox08 = () => {
+  console.log(`box 8 was clicked by ${player}`);
+  if (player == 'player01'){
+    box08image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-x-icon-18-256.png"
+    scores[7] = ("X");
+   }
+  else if (player == 'player02') {
+    box08image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-o-icon-18-256.png"
+    scores[7] = ("O");
+  }
+  box08image.style.display = "inline"
+  switchPlayer()
+  console.log(scores)
+  checkScores()
+}
+
+box08 = document.getElementById('box08');
+box08.addEventListener('click', doThisForBox08)
+
+doThisForBox09 = () => {
+  console.log(`box 9 was clicked by ${player}`);
+  if (player == 'player01'){
+    box09image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-x-icon-18-256.png"
+    scores[8] = ("X");
+   }
+  else if (player == 'player02') {
+    box09image.src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/letter-o-icon-18-256.png"
+    scores[8] = ("O");
+  }
+  box09image.style.display = "inline"
+  switchPlayer()
+  console.log(scores)
+  checkScores()
+}
+
+box09 = document.getElementById('box09');
+box09.addEventListener('click', doThisForBox09)
+
+// Scores array
+checkScores = () => {
+  if (scores[0] === scores[1] && scores[0] === scores[2]){
+    console.log("Game ended, Someone wins.")
+  }
+  else if (scores[3] === scores[4] && scores[3] === scores[5]){
+    console.log("Game ended, Someone wins.")
+  }
+  else if (scores[6] === scores[7] && scores[6] === scores[8]){
+    console.log("Game ended, Someone wins.")
+  }
+  else if (scores[0] === scores[3] && scores[0] === scores[6]){
+    console.log("Game ended, Someone wins.")
+  }
+  else if (scores[1] === scores[4] && scores[1] === scores[7]){
+    console.log("Game ended, Someone wins.")
+  }
+  else if (scores[2] === scores[5] && scores[2] === scores[8]){
+    console.log("Game ended, Someone wins.")
+  }
+  else if (scores[0] === scores[4] && scores[0] === scores[8]){
+    console.log("Game ended, Someone wins.")
+  }
+  else if (scores[2] === scores[4] && scores[2] === scores[6]){
+    console.log("Game ended, Someone wins.")
+  }
+}
+
+
+</script>
+
+</body>
+</html>

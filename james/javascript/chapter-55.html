@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 55: 17/2/22</title>
+</head>
+<body>
+    <h1>Chapter 55: Setting style</h1>
+    <p id="p1" onclick="makeBig()">Make This bigger</p>
+    Make the image go to the right of the screen
+    <img src="https://media.istockphoto.com/id/173682323/photo/says.jpg?s=612x612&w=0&k=20&c=7jnXQrYzUWNTnLhjPgimxHIbjsaHvZmAMALGVzYNARQ=" id="pic99" onclick="makeRight()">
+    <p id="div9" onclick="makeInvisible()">Make this text disappear</p>
+    <div id="margin" onclick="makeMargin"></div>
+    <buton type="buton" onclick="makeMargin()"></buton>
+    <div id="mainPic" onclick="getComputedStyle()"></div>
+    <script>
+        console.log("Chapter 55")
+function makeBig() {
+    document.getElementById("p1").className += " big";
+}
+// Other way to specify style properties
+function makeBig() {
+    document.getElementById("p1").style.fontSize = "4em";
+}
+// This statement left-floats an image
+function makeRight() {
+document.getElementById("pic99").style.cssFloat = "right";
+}
+// This statement makes an element invisible
+function makeInvisible() {
+document.getElementById("div9").style.visibility = "hidden";
+}
+// This statement gives an element left and right margins of 10pix
+function makeMargin() {
+document.getElementById("margin").style.margin = "10 50px 20 30px;";
+}
+// This statement gives both css and inline properties.
+function getComputedStyle() {
+ document.getComputedStyle("mainPic").margin;
+}
+    </script>
+</body> 
+</html>

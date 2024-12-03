@@ -1,0 +1,60 @@
+
+<html>
+<!--
+(C) 2014 Philip Anderson
+philanderson556@lovemailforlife.lockernerd.co.uk
+NOTE:
+You may put this game on your site as long as you keep this message, do not distribute it as your own and you may do anything to it but if edited don't put it on your site and say you made it.
+-->
+<head>
+<script data-ad-client="ca-pub-6406272216834493" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<STYLE>
+font {color: #ffffff; font-size: 10pt; font-family: Comic Sans MS;}
+input { border-style:solid; border-top-width:1px; border-right-width:1px; border-bottom-width:1px; border-left-width:1px;  color: #00ff00; font-family: comic sans ms; background: #4682b4;}
+</STYLE>
+<script LANGUAGE="JavaScript">
+function Title() {document.title="STOP ON 1o0 By  Philip Anderson"; window.setTimeout("Title1();",1);}
+function Title1() {document.title="STOP ON 10o By Philip Anderson"; window.setTimeout("Title();",1);}
+counter=0;
+function Counter1() {
+window.status="Counter: " + counter;
+document.game.number.value=counter; 
+counter++;
+Time=window.setTimeout("Counter1();",1); 
+if (counter==106) {
+counter=0;
+}}
+function Results() {
+window.clearTimeout(Time);
+if (counter==101) {
+alert("Yay! You stopped on 100!");
+}
+if (counter!=101) {
+counter--;
+alert("Aw! You missed it and got " + counter + " instead! Try again!");
+}
+counter=0;
+window.status="Counter: " + counter;
+document.game.number.value=counter;
+}
+</script>
+<script LANGUAGE="JavaScript">
+document.onmousedown=click
+function click() {
+if ((event.button==2) || (event.button==3)) {
+alert("Want the game on your site? Email me @ philanderson556@lovemailforlife.lockernerd.co.uk");
+alert("and tell me your name what site your gonna put it on.");
+}}
+</script></head>
+<body bgcolor="#000000" onUnLoad="alert('Thank you for playing my game - Philip Anderson');" onLoad="Title();" onKeyPress="Results();">
+</font>
+<center>
+<form name="game">
+<input type="text" name="number" size="2" VALUE="0" onFocus="this.blur();" style="font-size: 200;"><BR><input type="button" VALUE="Start" onClick="Counter1(); counter=0;"> <input type="button" VALUE="Stop!" onClick="Results(); counter=0;"> <input type="button" VALUE="Rules" onClick="alert('Stop on 100 by Nolan Gendron \n Rules: \n The aim of the game is to make your counter stop at 100. To start your counter click the Start button , To stop it click the Stop! button or press any key on your keyboard');"> 
+<br>
+<font><b>Hint:</b> You can also stop by using your keyboard by pressing  a letter, number and/or spacebar.<br>Stop on 100 by Philip Anderson</font>
+</font></form>
+</center>
+</body>
+
+

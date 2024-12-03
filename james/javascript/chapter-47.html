@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 47 8/1/22</title>
+</head>
+<body>
+    <h1>Chapter 47: Events: mouse</h1>
+    <script>
+    console.log("Chapter 47")
+    console.log("How to make things happen when a mouse hovers over it")
+   </script> 
+    <a href="index.html" onMouseover="this.style.color='green';">Home page  - This should turn green when you hover over it</a>
+   <!--Making it go back to the original image when the mouse moves off of it-->
+    <img src="https://static-1.springest.com/uploads/product_image/image/9072/big-what-a-plant-knows.jpg" onMouseover="src='https://img.freepik.com/free-vector/tree-transparent-background_1308-74201.jpg'" onMouseout="src='https://static-1.springest.com/uploads/product_image/image/9072/big-what-a-plant-knows.jpg';">
+
+    <h1 onMouseover="alert('The plant should turn into a tree when you hover over it.');">Hover your mouse over this title</h1>
+
+</body> 
+</html> 

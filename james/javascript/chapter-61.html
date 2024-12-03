@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 61: 19/2/222</title>
+</head>
+<body>
+    <h1>Chapter 61: The DOM: Junk artifacts and nodeType</h1>
+    <p>All the kings horses</p>
+    <div id="humpty"></div>
+    <p>If the node is an element (div or p) it will be 1</p>
+    <p>If its a text node, it will be 3</p>
+    <p>This statement checks the nodetype:</p>
+    <div id="humpty2"></div>
+    </div>
+    <!--If you wanted to change the 2nd paragraph to "All his men", do this.-->
+    <script>
+        document.getElementById("humpty").innerHTML = "And all the kings men.";
+    
+        console.log("Chapter 61")
+        // This statement checks the node type
+        var nType = document.getElementById("humpty").nodeType;
+        document.getElementById("humpty2").innerText = nType;
+        var d = document.getElementById("humpty");
+        var pCounter = 0;
+        for (var i = 0; i < d.childNodes.length; i++) {
+            if (d.childNodes[i].nodeType === 1) {
+                pCounter++;
+            }
+            if (pCounter === 2) {
+                d.childNodes[i].innerHTML = "All his men."
+                break;
+            }   
+                console.log(pCounter)
+        }
+
+    </script>
+</body> 
+</html>

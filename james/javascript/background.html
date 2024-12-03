@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Changing background Colour</title>
+    </head>
+<body style="text-align: center;">
+    <h1 style="color:blueviolet">Changing Background Colour</h1>
+    <p id="UP" style="font-size: 32px;
+     font-weight: bold;"></p>
+    <button onclick="Run()">Change</button>
+    <p id="DOWN" style="color: rgb(255, 0, 0); 
+    font-size: 50px; 
+    font-weight: bolder;"></p>
+     <script>
+        let up = document.getElementById("UP");
+        let down = document.getElementById("DOWN"); 
+        let str = "Click on the button to change the background colour"
+        up.innerHTML = str;
+        function changeColour(colour) {
+            document.body.style.backgroundColor = colour;
+         }
+        function Run() {
+            changeColour("rgb(255, 148, 0)");
+            down.innerHTML = "Background Colour has been changed";
+        }
+     </script>
+ </body>
+ </html>

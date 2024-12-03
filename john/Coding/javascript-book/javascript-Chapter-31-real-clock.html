@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Clock</title>
+    <style>
+        div {
+            font-size: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 31 - Real clock</h1>
+    <h2>August 27th 2021</h2>
+    <div id="clock">this is a clock</div>
+    <script>
+
+        let rightNow = new Date();
+        let dateString = rightNow.toString();
+    
+        let theDay = rightNow.getDay();
+        console.log(`right now it is ${rightNow}`);
+        console.log(`today is ${theDay}`);
+        console.log(`the date as a string = ${dateString}`);
+
+        let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+        let now = new Date();
+        theDay = now.getDay();
+        let nameOfToday = dayNames[theDay];
+
+        console.log(`now is ${now}`);
+        console.log(`the day is ${theDay}`);
+        console.log(`today is ${nameOfToday}`);
+
+        let month = now.getUTCMonth()+1; // January = month 0 so have to add 1 to make it month 1
+        let year = now.getFullYear();
+        let date = now.getDate();
+        let hour = now.getHours();
+        let minute = now.getMinutes();
+        if ( minute < 10){
+            minuteAsString = "0" + minute;
+
+        } else {
+            minuteAsString = minute;
+
+        }
+        console.log(`the date today is ${nameOfToday} ${date} ${month} ${year} `);
+        console.log(`the time today is ${hour} ${minute}`);
+        console.log(`the time today is ${hour}:${minuteAsString}`);
+        
+
+
+        function printTime () {
+            now = new Date();
+            month = now.getUTCMonth()+1;
+            year = now.getFullYear();
+            date = now.getDate();
+            hour = now.getHours();
+            minute = now.getMinutes();
+            seconds = now.getSeconds();
+            time = `the time now is ${hour}:${minute}:${seconds}`;
+            console.log(time);
+            console.log();
+            document.getElementById("clock").innerText = time;
+
+        }
+        setInterval(printTime,1000)
+
+    </script>
+</body>
+</html>

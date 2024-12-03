@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 37</title>
+</head>
+    <style>
+        div {
+            font-size: 40px;
+            font-family: monospace;
+
+        }
+
+    </style>
+
+
+<body>
+    <h1>Chapter 37: Cubed numbers and roots</h1>
+    <h2>September 2nd 2021</h2>
+    <div id="cube">Cubed numbers</div>
+    <div id="root">Cubed Roots</div>
+    <div id="chapter-37"></div>
+
+    <script>
+
+        let x = 10
+        let y = 20
+
+        let addNumbers = function(a, b){
+            console.log('inside function using parameters to add numbers')
+            return a+b
+        }
+        
+        let output = addNumbers(x,y)
+        
+        console.log(`the sum of numbers ${x} and ${y} is ${output}`)
+
+
+        let food = "toast";
+        let topping = "egg";
+
+        let whatsForBreakfast = function(cook, eat) {
+            let foodAsString = `${cook} and ${eat}`
+            return foodAsString
+        }
+
+        let breakFast = whatsForBreakfast(food, topping)
+        console.log(`i had ${breakFast} for breakfast`)
+       
+
+        let a = prompt("Enter a number, and I will cube it.")
+
+        function cube(x) {
+
+            let output = x * x * x
+            return output
+
+        }
+
+        output = cube(a);
+        console.log(`${a} cubed is ${output}`)
+        console.log(`the cube root of ${output} is ${a}`)
+
+        chapter37Output = `i had ${breakFast} for breakfast. (toast and egg are parameters)`
+
+        chapter37 = document.getElementById("chapter-37")
+        chapter37.innerText = chapter37Output
+
+        document.getElementById("cube").innerText = `${a} cubed is  ${output}`;
+        document.getElementById("root").innerText = `the cube root of ${output} is  ${a}`;
+    </script>
+
+    <!-- OUTPUT:
+    46546 cubed is 100843310779336
+    the cube root of 100843310779336 is 46546
+    i had toast and egg for breakfast. (toast and egg are parameters)
+-->
+</body>
+</html>

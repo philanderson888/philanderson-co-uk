@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 46</title>
+</head>
+<body>
+    <h1>Chapter 46: On clicks</h1>
+    <h2>December 21st 2021</h2>
+    <div id="showSomething"></div>
+    
+        <input type="button" value="Click" onClick="alert('Hello world!');">
+        <input type="button" value="Click - Hello World" onClick="doThis()">
+
+        <img src="https://user-images.githubusercontent.com/22680912/46479049-d8a9c400-c80b-11e8-92a1-89fc10701f4a.jpg"     height="200" width="200" onClick="doThat()">      
+</body>
+<script>
+    counter = 0
+    doThis = () => {
+        counter++
+        console.log(`doing something`);
+        showSomething = document.getElementById('showSomething')
+        showSomething.innerHTML=`you clicked <b>${counter}</b> times`
+    }
+    doThat = () => {
+        console.log(`doing that`);
+    }
+</script>
+</html>

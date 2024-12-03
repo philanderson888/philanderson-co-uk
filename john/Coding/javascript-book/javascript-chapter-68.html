@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 68</title>
+</head>
+<body>
+    <h1>Chapter 68: Inserting nodes</h1>
+    <h2>January 8th 2022</h2>
+    
+    <script>
+        var target = parentDiv.childNodes[1];
+        parentDiv.insertBefore(newE, target.nextSibling);
+
+        var parentDiv = document.getElementById("div1");
+        var nodeToRemove = parentDiv.childNodes[2];
+        parentDiv.removeChild(nodeToRemove);
+    </script>
+</body>
+</html>

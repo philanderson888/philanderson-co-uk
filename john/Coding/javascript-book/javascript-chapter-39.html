@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 39</title>
+</head>
+<body>
+    <h1>Chapter 39: days of week</h1>
+    <h2>September 2nd 2021</h2>
+    <div id="chapter-39"></div>
+    <div id="chapter-39info1"></div>
+    <div id="chapter-39info2"></div>
+    <div id="chapter-39info3"></div>
+
+
+    <script>
+        now = new Date
+        namesOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        numberOfWeek = now.getDay();
+        dayOfWeek = namesOfWeek[numberOfWeek -1]
+
+        // How to do it with an If statement
+
+        // if (dayOfWeek ==="Sat" || dayOfWeek === "Sun") {
+        //     alert("Whoopee!");
+        // }
+        // else if (dayOfWeek === "Fri") {
+        //     alert("TGIF!");
+        // }
+        // else {
+        //     alert("Shoot me now!");
+        // }
+
+        // A switch statement
+
+        switch(dayOfWeek) {
+        case "Sat" :
+            alert("Whoopee! It's Saturday!");
+            chapter39Output = "Whoopee! It's Saturday!";
+            break;
+        case "Sun" :
+            alert("Whoopee! It's Sunday!");
+            chapter39Output = "Whoopee! It's Sunday!"
+            break;
+        case "Fri" :
+            alert("Hey it's Friday!");
+            chapter39Output = "Hey it's Friday!"
+            break;
+        default :
+            alert("Shoot me now! Its not the weekend yet..");
+            chapter39Output = "Shoot me now! Its not the weekend yet..";
+        }
+
+        chapter39 = document.getElementById("chapter-39")
+        chapter39.innerText = chapter39Output
+
+        chapter39info1 = "\n (If its Friday, the text will be 'Hey it's Friday!')"
+        chapter39info2 = "(If its Saturday, the text will be 'Whoopee! It's Saturday!')"
+        chapter39info3 = "(If its Sunday, the text will be 'Whoopee! It's Sunday!')"
+
+        chapter39info = document.getElementById("chapter-39info1")
+        chapter39info.innerText = chapter39info1
+
+        chapter39infob = document.getElementById("chapter-39info2")
+        chapter39infob.innerText = chapter39info2
+
+        chapter39infoc = document.getElementById("chapter-39info3")
+        chapter39infoc.innerText = chapter39info3
+    </script>
+
+<!-- OUTPUT:
+    Chapter 39: days of week
+    September 2nd 2021
+    
+    Shoot me now! Its not the weekend yet.
+
+
+-->
+</body>
+</html>

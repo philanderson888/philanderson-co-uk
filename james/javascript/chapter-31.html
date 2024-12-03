@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 31: Getting the current data and time</title>
+</head>
+<body>
+    <h1>Chapter 31</h1>
+    <script>
+    console.log("Chapter 31: Getting the current data and time")
+
+    var currently = new Date();
+
+    var dateString = currently.toString();
+
+    let currentTime = new Date();
+    let theDay = currentTime.getDay();
+
+    let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var now = new Date();
+    var theDay2 = now.getDay();
+    var nameOfToday = dayNames[theDay2];
+
+
+
+
+    console.log(`Made an array and made a new date object(now), 
+then make the day a number(6), then uses the number  
+to specify which day`)
+    console.log(dayNames)
+    console.log(now)
+    console.log(theDay2)
+    console.log(nameOfToday)
+    
+
+    const a = new Date(2023, 6, 25, 16, 35, 43);
+    console.log("")
+    console.log("Using 6 numbers gets year,month,day,hour,minute and second")
+    console.log(a)
+
+    const b = new Date(2023, 6, 25, 16, 35);
+    console.log("Using 5 numbers gets year,month,day,hour and minute")
+    console.log(b)
+
+    const c = new Date(2023, 6, 25, 16);
+    console.log("Using 4 numbers gets year,month,day and hour ")
+    console.log(c)
+
+    const d = new Date(2023, 6, 25);
+    console.log("Using 3 numbers gets year,month and day ")
+    console.log(d)
+
+    const e = new Date(2023, 6);
+    console.log("Using 2 numbers gets year and month ")
+    console.log(e)
+
+   </script> 
+</body>
+</html>

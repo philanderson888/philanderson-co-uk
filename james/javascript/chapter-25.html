@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 25</title>
+</head>
+<style>
+    body {
+        background-image: url(https://www.chromethemer.com/download/hd-wallpapers/nebula-1920x1080.jpg);
+        background-size: cover;     
+        color: white;
+   }
+</style>
+<body>
+    
+    <h1>Chapter 25: Strings: Replacing characters</h1>
+    <div id="text"></div>
+    <div id="newT"></div>
+    <div id="out"></div>
+    <script>
+    console.log("Chapter 25:Strings: Replacing characters")
+    text = "In the beginning of World War I"
+    console.log(text)
+    console.log("replacing a string with another string")
+    console.log("Replacing World War I to the First World War")
+    console.log(text)
+    var newText = text.replace("World War I", "the First World War");
+    var newText = text.replace(/World War I/g, "the First World War");
+    console.log(newText)
+    console.log(text)
+    var newText = text.replace("World War I", "the First World War");
+    var newText = newText.replace("World War I", "the First World War");
+    var newText = text.replace(/World War I/g, "the First World War");
+    document.getElementById(`text`).innerText = text
+    document.getElementById(`newT`).innerText = newText
+    let output = `The original sentence is ${text} and im replacing the words "World War I" with 
+    "the First World War" to make the sentence ${newText}`
+    console.log(output)
+    document.getElementById(`out`).innerText = output
+
+    /*  
+    explain
+    1. what is the sentence at the start
+    2. which word are you going to change  (keep it simple)
+    3. what is the sentence at the end
+    */
+   </script> 
+</body>
+</html>

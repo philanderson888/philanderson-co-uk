@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 42</title>
+</head>
+<h1>Chapter 42: Do while loop</h1>
+<h2>September 3rd 2021</h2>
+<div id="chapter-42"></div>
+<div id="chapter-42b"></div>
+
+<body>
+    <script>
+
+    var i = 0;
+    do {
+       alert(i);
+        console.log(i);
+
+    chapter42 = document.getElementById('chapter-42')
+    chapter42.innerHTML = i
+
+        i++;
+    } while (i <= 3);
+
+    chapter42Output = "The Do is printing out numbers, incrimenting it by 1, while the number is below 3"
+    chapter42 = document.getElementById('chapter-42b')
+    chapter42.innerHTML = chapter42Output
+    </script>
+</body>
+</html>

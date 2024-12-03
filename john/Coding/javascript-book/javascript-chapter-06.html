@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add And Multiply Numbers</title>
+</head>
+<body>
+    <h1>Chapter 06: Adding & Multiplying</h1>
+    <h2>August 8th 2021</h2>
+    <div id='data1'></div>
+    <div id="data2"></div>
+  <script>
+      
+    alert("You will now enter 5 numbers")
+    var a = parseInt(prompt("Enter a number"))
+    var b = parseInt(prompt("Enter your second number"))
+    var c = parseInt(prompt("Enter your third number"))
+    var d = parseInt(prompt("Enter your fourth number"))
+    var e = parseInt(prompt("Enter your fifth number"))
+    alert("now we add these 5 numbers up!")
+    total = a+b+c+d+e
+    product = a*b*c*d*e
+    alert(total)     
+    alert("now we will times these numbers together and get the product")
+    alert(product)
+  document.getElementById("data1").innerText = "The sum of these numbers are " + total
+  document.getElementById("data2").innerText = "The product of these numbers are " + product
+  console.log(total)
+  console.log(product)
+</script>
+</body>
+</html>

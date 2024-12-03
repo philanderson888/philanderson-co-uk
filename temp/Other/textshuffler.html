@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<script data-ad-client="ca-pub-6406272216834493" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Text Shuffler</title>
+
+  
+<script type="text/JavaScript">
+<!--
+ 
+/*
+    (c)2005 Martin Latter ~ http://www.copysense.co.uk/
+    Derived from trying to repeat in JS what is easily possible in PHP with the shuffle function
+*/
+ 
+var r=0;
+var db=document.getElementById?1:0;
+ 
+function shuffle(r)
+{
+    if (!db) return;
+ 
+    if (!r)
+    {
+        var wS = document.getElementById("ta").value.toLowerCase();
+        wS = wS.replace(/[\?",;!\.]+/g,"");
+        var wordArr = wS.split(/\s/);
+    }
+ 
+    wordArr.sort(sortArr);
+    document.getElementById("output").innerHTML = wordArr.join(" ");
+    r=1;
+ 
+    function sortArr(x,y)
+    {
+        var rr = [-1,1,0];
+        var rndno = parseInt(Math.random()*3);
+        return rr[rndno];
+    }
+}
+ 
+// -->
+</script>
+     
+</head>
+ 
+<body>
+ 
+<form action="" onsubmit="return false;">
+<textarea cols="50" rows="12" id="ta" name="ta">
+Time
+ 
+Unfathomable Sea! whose waves are years,
+Ocean of Time, whose waters of deep woe
+Are brackish with the salt of human tears!
+Thou shoreless flood, which in thy ebb and flow
+Claspest the limits of mortality,
+And sick of prey, yet howling on for more,
+Vomitest thy wrecks on its inhospitable shore;
+Treacherous in calm, and terrible in storm,
+Who shall put forth on thee,
+Unfathomable Sea?
+</textarea>
+ 
+<label>'Time' by Percy Bysshe Shelley</label>
+ 
+<input type="button" id="but" value="shuffle" onclick="shuffle(r);">
+</form>
+ 
+<div id="output"></div>
+ 
+</body>
+</html>

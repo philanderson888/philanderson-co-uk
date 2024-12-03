@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Chapter Index</title>
+</head>
+<div>
+    <style>
+        .button {
+         width: 30%;
+         height: 50px;  
+        }
+    </style>
+
+    <h1>Javascript - Important Chapters</h1>
+    <button type="button" class="button" onclick="Chapter18()">Chapter 18 - for loops</button>
+    <div id="chapter-18"></div>
+     <script>
+         function Chapter18() {
+            console.log("Chapter 18")
+    var cleanestHouses = ["London", "Birmingham", "Manchester"]
+    console.log(cleanestHouses)
+    let cityToCheck = prompt("Enter a City out of London, Birmingham, Liverpool and Manchester.")
+    console.log(`cityToCheck = ${cityToCheck}`)
+    if (cityToCheck === cleanestHouses[0]) {
+        console.log("Its one of the cleanest cities");
+    }
+    else if (cityToCheck === cleanestHouses[1]) {
+        console.log("Its one of the cleanest cities");
+    }   
+    else if (cityToCheck === cleanestHouses[2]) {
+        console.log("Its one of the cleanest cities");
+    }
+    else {
+        console.log("Its not one of the cleanest cities");
+    }   
+
+console.log("This is using a for loop:")
+
+    for (var i = 0; i <= 4; i++) {
+        if (cityToCheck === cleanestHouses[i]) {
+            var Housecheck = "Its one of the cleanest cities"
+        }
+    }
+
+    for (var i = 0; i <= 4; i++) {
+        console.log("Hello");
+    }
+    
+
+    let output = 0
+    const answers = ["yes", "no", "maybe", "yes", "possibly"]
+    for (var i = 0; i < 5; i++) {
+      if (answers[i] === "yes") {
+          output = output+1 
+      }
+    }
+    console.log("There are " + output + " matches")
+    console.log(`There are ${output} matches`)
+
+    console.log(cleanestHouses)
+    chapter18 = document.getElementById('chapter-18');
+    chapter18.innerHTML = Housecheck
+         }
+     </script>
+</div>
+
+<div>
+    <button type="button" class="button" onclick="Chapter23()">Chapter 23 - Finding segments</button>
+        <div id="chapter-23"></div>
+        <div id="output"></div>
+        <div id="out"></div>
+        <script>
+            function Chapter23() {
+                console.log("Chapter 23:Strings: Finding segments")
+    
+                let text = "'Here is some text and here is some more text.'"
+        let searchText = "text"
+
+        var firstChar = text.indexOf(searchText);
+        var lastChar = text.lastIndexOf(searchText);
+
+        // print out firstChar
+        console.log(`Printing out firstChar ${firstChar}`);
+        let outputText = `We find the first character of '${searchText}' inside ${text} at position ${firstChar} and the last character of the second ${searchText} at position ${lastChar}`
+        console.log(outputText)
+        document.getElementById('output').innerText=outputText
+
+
+        // start here
+
+        let text2 = "'This is some text.'"
+        let searchText2 = "text"
+        let searchText3 = "some"
+
+        var firstSeg = text2.indexOf(searchText2);
+        var lastSeg = text2.lastIndexOf(searchText3);
+
+        console.log(`Printing out firstSeg ${firstSeg}`);
+        let output = `We find ${searchText2} inside ${text2} at position ${firstSeg} and the last character of '${searchText3}' at position ${lastSeg}`
+        console.log(output)
+        document.getElementById('out').innerText = output
+        console.log(text2.slice(4, 12));
+
+            }
+    </script>
+    </div>
+
+<div>
+    <button type="button" class="button" onclick="Chapter28()">Chapter 28 - Converting strings to integers and decimals</button>
+    <div id="text1"></div>
+    <div id="text2"></div>
+    <div id="output3"></div>
+    <div id="text3"></div>
+    <div id="output4"></div>
+    <div id="text4"></div>
+    <div id="output5"></div>
+    <div id="text5"></div>
+    <div id="text6"></div>
+    <div id="output6"></div>
+
+
+
+
+    <script>
+        
+        function Chapter28() {
+        console.log("Chapter 28 - Converting strings to integers and decimals")
+            let currentAge = prompt("Enter your age.");
+            let yearsEligibleToPlay = parseInt(currentAge) + 1;
+    
+            let a = "Using 'parseInt' to convert the age entered by the user to a string so using + doesnt concatenate it."
+                console.log(a)
+
+            console.log("")
+
+            var myNumber = parseInt("1.999");
+        let b = "parseInt makes it 1 not 2 it doesnt round, just removes the decimal completely"
+            console.log(b)
+        let w = myNumber
+            console.log(w)
+        
+        var myNumber = parseFloat("1.999");
+        let c = "parseFloat makes it a decimal"
+            console.log(c)
+        let x = myNumber
+            console.log(x)
+
+        let d = `This is the age entered (${currentAge}) with + 1 added`
+            console.log(d)
+        let y = yearsEligibleToPlay
+            console.log(y)
+
+        let currentAge2 = prompt("Enter your age again.");
+        let yearsEligibleToPlay2 =(currentAge2) + 1;
+
+        console.log("")
+        let e = "This is what happens when you dont use parseInt when you enter your age"
+            console.log(e)
+        let f = "It just adds the number 1 onto the end of it"
+            console.log(f)
+
+        let z = yearsEligibleToPlay2
+            console.log(z)
+
+        document.getElementById('text1').innerText=a
+        document.getElementById('text2').innerText=b
+        document.getElementById('text3').innerText=c
+        document.getElementById('text4').innerText=d
+        document.getElementById('text5').innerText=e
+        document.getElementById('text6').innerText=f
+        document.getElementById('output3').innerText=w
+        document.getElementById('output4').innerText=x
+        document.getElementById('output5').innerText=y
+        document.getElementById('output6').innerText=z
+
+            }
+
+        </script>
+
+    <button type="button" class="button" onclick="Chapter32()">Chapter 32 - Extracting parts of date and time</button>
+        <div id="words"></div>
+        <div id="date"></div>
+        <div id="words2"></div>
+        <div id="date2"></div>
+        <div id="words3"></div>
+        <div id="date3"></div>
+        <div id="words4"></div>
+        <div id="date4"></div>
+        <div id="words5"></div>
+        <div id="date5"></div>
+        <div id="words6"></div>
+        <div id="date6"></div>
+        <div id="words7"></div>
+        <div id="date7"></div>
+        <div id="words8"></div>
+        <div id="date8"></div>
+    <script>
+function Chapter32() {
+        console.log("Chapter 32: Extracting parts of the date and time")
+
+    console.log("Getting the month ranging from 0 for January and 11 for December")
+    var x = new Date();
+    var currentMonth = x.getMonth();
+    console.log(currentMonth)
+
+    console.log("Getting a number for the day of the month.")
+    var dayOfMonth = x.getDate();
+    console.log(dayOfMonth)
+
+    console.log("Getting the 4-digit number for the year")
+    var currentYr = x.getFullYear();
+    console.log(currentYr)
+
+    console.log("Getting the hour ranging from 0(midnight) to 23(11p.m)")
+    var currentHrs = x.getHours();
+    console.log(currentHrs)
+
+    console.log("Getting the minutes ranging from 0 to 59")
+    var currentMins = x.getMinutes();
+    console.log(currentMins)
+
+    console.log("Getting the seconds ranging from 0 to 59")
+    var currentSecs = x.getSeconds();
+    console.log(currentSecs)
+
+    console.log("Getting the milliseconds ranging from 0 to 999")
+    var currentMills = x.getMilliseconds();
+    console.log(currentMills)
+
+    console.log("Getting the number of milliseconds elapsed since Jan 1, 1970 12pm")
+    var millsSince = x.getTime();
+    console.log(millsSince)
+
+            document.getElementById("date").innerText=currentMonth
+            document.getElementById("date2").innerText=dayOfMonth
+            document.getElementById("date3").innerText=currentYr
+            document.getElementById("date4").innerText=currentHrs
+            document.getElementById("date5").innerText=currentMins
+            document.getElementById("date6").innerText=currentSecs
+            document.getElementById("date7").innerText=currentMills
+            document.getElementById("date8").innerText=millsSince
+            document.getElementById("words").innerText="Getting the month ranging from 0 for Jan and 11 for Dec"
+            document.getElementById("words2").innerText="Getting a number for the day of month"
+            document.getElementById("words3").innerHTML="Getting the 4-digit number for the year"
+            document.getElementById("words4").innerText="Getting the hour ranging from 0(midnight) to 23(11pm)"
+            document.getElementById("words5").innerText="Getting the minutes from 0 to 59"
+            document.getElementById("words6").innerText="Getting the seconds from 0 to 59"
+            document.getElementById("words7").innerText="Getting the milliseconds from 0 to 999"
+            document.getElementById("words8").innerText="Getting the milliseconds from Jan 1st, 1970, 12pm"
+
+        
+            }
+        </script>
+        <button type="button" class="button" onclick="Chapter36()">Chapter 36 - Functions: Passing data to them</button>
+        <div id="print"></div>
+        <div id="print1"></div>
+        <div id="print2"></div>
+        <div id="print3"></div>
+        <script>
+    function Chapter36() {
+            console.log("Chapter 36")
+            welcomeUser("This is the function");
+            var x = "A string inside the parenthesis after the function name is called an argument"
+        function welcomeUser(welcome) {
+            alert(welcome);
+        }
+            let y = ("A variable inside the parenthesis after the function name is called a parameter")
+            var welcome = "This is a message from calling the same function"
+        welcomeUser(welcome);
+
+            var z = "Using numbers as a parameter"
+        function showBigNum(roundToAThousand) {
+            var roundToAThousand = 999;
+            showBigNum(roundToAThousand)   
+        }
+
+        function showMessage(m, string, winner ) {
+            alert(m + string + winner);
+        }
+        var month = "August";
+        var winner = "James";
+        showMessage(month, "'s winner is ", winner);
+        var a = "A function call has parenthesis which takes an argument in it"
+    
+        document.getElementById("print").innerText = x
+        document.getElementById("print1").innerText = y
+        document.getElementById("print2").innerText = z
+        document.getElementById("print3").innerText = a
+    }
+        </script>
+        <button type="button" class="button" onclick="Chapter39()">Chapter 39 - Switch statements</button>
+        <div id="w"> </div>
+        <script>
+        function Chapter39() {  
+            console.log("Chapter 39 - Switch statements")
+            let dayofWeek = prompt("What day is it today?")
+            switch(dayofWeek) {
+                case "Tuesday" :
+                    alert("3 days until the weekend");
+                    break;
+                case "Monday" :
+                    alert("The week has only just begun!");
+                    break;
+                case "Saturday" :
+                    alert("Yipee! Its the weekend");
+                    break;
+                case "Sunday" :
+                    alert("Church today!");
+                    break;
+                case "Friday" :
+                    alert("Weekend ahead!");
+                    break;
+                 case "Wednesday" :
+                    alert("2 days left until the weekend");
+                    break;
+                case "Thursday" :
+                    alert("1 day after today then the weekend");
+                    break;
+                default :
+                    alert("That is not a day in the week - use the full name and capitals!");
+                }
+            document.getElementById("w").innerText("There is a different message for each day")
+        }
+        </script>
+
+        <button type="button" class="button" onclick="Chapter42()">Chapter 42 - While loops with do</button>
+        <div id="g"></div>
+        <div id="h"></div>
+        <div id="j"></div>
+        <script>
+        function Chapter42() {
+            console.log("Chapter 42")
+            let i = 0;
+            let j = 10;
+            do {
+                alert(i);
+                i++
+            } while (i < 5);
+            
+            do {
+                alert(j)
+                --j
+            } while (j > 0)
+            document.getElementById("g").innerText = "It will alert 5 times from 0 to 4 incrementing by 1 each time"
+            document.getElementById("j").innerText = "It will countdown from 10 after counting to 5"
+            document.getElementById("h").innerText = i
+        }
+        </script>
+       
+         <button type="button" class="button" onClick="Chapter48()">Chapter 48 - Events:Fields</button>
+         <div id="Email"></div>
+         <div id="input"></div>
+         <div id="yellow" onfocus="makeFieldYellow()"></div>
+         <div id="input2" onfocus="makeFieldYellow()"></div>
+         <div id="input3"></div>
+         <div id="input4"></div>
+         <div id="input5"></div>
+         <div id="input6"></div>
+         <div htmlfile = "background.html"></div>
+         <script>
+            function Chapter48() {
+                console.log("Chapter 48")
+                console.log("Making the field box go yellow when someone clicks on it")
+                console.log("Making it go back to white afterwards")
+                document.getElementById("Email").innerHTML="Email: <br>"
+                document.getElementById("input").innerHTML="<input type='text' size='30' onFocus=this.style.backgroundColor='Yellow'; onblur=this.style.backgroundColor='White';>"
+                document.getElementById("input2").innerHTML="<input type='text' size='28' onfocus=makeFieldYellow(); value='Click me'>"
+                function makeFieldYellow() {
+                    document.getElementById("input2").style.backgroundColor = "Yellow";
+                }
+                document.getElementById("input2").innerHTML="<input type='text' size='28' onfocus=makeFieldYellow(); value='Click me'>"
+                document.getElementById("input3").innerHTML = "<br>"
+                document.getElementById("input4").innerText = "Making the background turn a different colour"     
+                document.getElementById("input5").innerHTML = "<button type = 'button' class='button' size = 24 onClick=this.style.backgroundColor='yellow'; >This will turn yellow when you click on it"     
+                document.getElementById("input6").innerHTML = "<a href = 'background.html'>Click on this link</a>"
+            }
+        </script>
+
+        <script>
+    /*          let el_up = document.getElementById("GFG_UP");
+                let el_down = document.getElementById("GFG_DOWN");
+                let str = "Click on button to change the background colour";             
+                el_up.innerHTML = str;          
+                function changeColor(color) {
+                    document.body.style.background = color;
+                }
+                function gfg_Run() {
+                    changeColor('orange');
+                    el_down.innerHTML = "Background Colour changed";
+                }     
+    */  </script>
+         <!--
+         <body style="text-align:center;">
+            <p><a href="#" onclick="Chapter48();">Click me</a></p>
+            <h1 style="color:#6a00ff    ;">
+                Changing background colour
+            </h1>     
+            <p id="GFG_UP" style="font-size: 16px;
+                                  font-weight: bold;">
+            </p>     
+            <button onclick="gfg_Run()">
+                Click here
+            </button>       
+            <p id="GFG_DOWN" style="color:rgb(255, 0, 0);
+                                    font-size: 20px;
+                                    font-weight: bold;">
+            </p>
+        -->
+    </div>
+</html>

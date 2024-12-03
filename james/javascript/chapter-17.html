@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 17</title>
+</head>
+<body>
+    <h1>Chapter 17:Removing, inserting and extracting elements</h1>
+    <script>
+    console.log("Chapter 17")
+    let myArray = ["x","y","z","a"]
+    console.log(myArray)
+    console.log("Removing one element")
+    myArray.shift();
+    console.log(myArray)
+    console.log("Adding new elements at the start")
+    myArray.unshift("b", "c");
+    console.log(myArray)
+    console.log("Removing one element at the end")
+    myArray.pop();
+    console.log(myArray)
+    console.log("Adding one element at the end")
+    myArray.push("d");
+    console.log(myArray)
+    console.log("Adding elements in the middle")
+    myArray.splice(2, 2, "e", "f", "g")
+    console.log(myArray)
+    console.log("Creating a new array with some of older array")
+    let myArray2 = myArray.slice(2, 5)
+    console.log(myArray2)
+   </script> 
+</body>
+</html>

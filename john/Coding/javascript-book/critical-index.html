@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Book - Critical Chapters</title>
+</head>
+<div>
+    <style>
+    .button {
+        width: 20%;
+        height: 40px;
+       }
+    </style>
+
+    <h1>Javascript Book - Critical Chapters</h1>
+    <button type="button" class="button" onclick="Chapter06()">Chapter 06: Adding & Multiplying</button>
+    <div id="chapter-06">
+    </div>
+    <script>
+        function Chapter06() {        
+            alert("You will now enter 5 numbers")
+            var a = parseInt(prompt("Enter a number"))
+            var b = parseInt(prompt("Enter your second number"))
+            var c = parseInt(prompt("Enter your third number"))
+            var d = parseInt(prompt("Enter your fourth number"))
+            var e = parseInt(prompt("Enter your fifth number"))
+            alert("now we add these 5 numbers up!")
+            total = a+b+c+d+e
+            product = a*b*c*d*e
+            alert(total)     
+            alert("now we will get the product.")
+            alert(product)
+            // document.getElementById("data1").innerText = "The sum of these numbers are " + total
+            // document.getElementById("data2").innerText = "The product of these numbers are " + product
+            console.log("total is " + total)
+            console.log("product is " + product)
+            chapter06Output = "The sum of these numbers are " + total
+            chapter06Output2 = "The product of these numbers are " + product
+            chapter06 = document.getElementById('chapter-06');
+            chapter06.innerHTML  = chapter06Output + "<br>" + chapter06Output2;
+
+        }
+</script>
+
+
+    <button type="button" class="button" onclick="Chapter10()">Chapter 10: If statements</button>
+    <div id="chapter-10"></div>
+    <script>
+        function Chapter10() {
+            var x = prompt("Where does the pope live? (Vatican)");
+            if (x === "Vatican") {
+                chapter10Output = "Correct!";
+                console.log(chapter10Output);
+                chapter10 = document.getElementById('chapter-10');
+                chapter10.innerHTML = chapter10Output
+            }
+    }
+    </script>
+
+    <button type="button" class="button" onclick="Chapter12()">Chapter 12: If, else and elif statements</button>
+    <div id="chapter-12"></div>
+    <script>
+        function Chapter12() {
+            var x = prompt("Where does the pope live? (Vatican, Rome, London)");
+            if (x === "Vatican"){
+                chapter12Output = "Correct!"
+            }
+            else if (x === "Rome") {
+                chapter12Output = "Incorrect, but close.";
+            }
+            else {
+                chapter12Output = "Incorrect";
+            }
+            console.log(chapter12Output);
+            chapter12 = document.getElementById('chapter-12');
+            chapter12.innerHTML = chapter12Output
+        }
+    
+    </script>
+
+    <button type="button" class="button" onclick="Chapter15()">Chapter 15: Arrays</button>
+    <div id="chapter-15"></div>
+    <script>
+        function Chapter15() {
+            var cities = ["Atlanta", "Baltimore", "Chicago", "Denver", "Seattle", "Los Angeles"]
+            var city = prompt("Choose a city to go to, from 0-5");
+            if (city === "0") {
+                chapter15Output = "Welcome to " + cities[0]
+            }
+            else if (city === "1") {
+                chapter15Output = "Welcome to " + cities[1]
+            }
+            else if (city === "2") {
+                chapter15Output = "Welcome to " + cities[2]
+            }
+            else if (city === "3") {
+                chapter15Output = "Welcome to " + cities[3]
+            }
+            else if (city === "4") {
+                chapter15Output = "Welcome to " + cities[4]
+            }
+            else if (city === "5") {
+                chapter15Output = "Welcome to " + cities[5]
+            }
+            else {
+                chapter15Output = "Put a number from 0-5."
+            }
+            console.log(chapter15Output);
+            chapter15 = document.getElementById('chapter-15');
+            chapter15.innerHTML = chapter15Output
+        }
+</script>
+
+
+    <button type="button" class="button" onclick="Chapter17()">Chapter 17: Changing Arrays</button>
+    <div id="chapter-17"></div>
+    <script>
+        function Chapter17() {
+            console.log(".pop - removes an element at the end of an array")
+            console.log(".push - adds an elements at the end of an array")
+            console.log(".shift - removes an element at the start of an array")
+            console.log(".unshift - adds an element at the start of an array")
+            console.log(".splice - inserts elements anywhere in the array, and can also remove elements that come after it.")  
+            console.log(".slice - cuts an element from one array, removing it and copying it to another array")  
+
+            chapter17Output = [(".pop - removes an element at the end of an array") + "<br>" +
+            (".push - adds an elements at the end of an array") + "<br>" +
+            (".shift - removes an element at the start of an array") + "<br>" +
+            (".unshift - adds an element at the start of an array") + "<br>" +
+            (".splice - inserts elements anywhere in the array, and can also remove elements that come after it.") + "<br>" +
+            (".slice - cuts an element from one array, removing it and copying it to another array")]
+            // .pop - removes an element at the end of an array
+            // .push - adds an elements at the end of an array
+            // .shift - removes an element at the start of an array
+            // .unshift - adds an element at the start of an array
+            // .splice - inserts elements anywhere in the array, and can also remove elements that come after it.
+            // .slice - cuts an element from one array, removing it and copying it to another array      
+            chapter17 = document.getElementById('chapter-17');
+            chapter17.innerHTML  = chapter17Output;
+
+            }
+    </script>
+
+
+    <button type="button" class="button" onclick="Chapter19()">Chapter 19: for loops</button>
+    <div id="chapter-19"></div>
+    <script>
+        function Chapter19() {
+            var cleanestCities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+            var cityToCheck = prompt("What is your city?");
+            var matchFound = false;
+            for (var i = 0; i <= 4; i++) {
+                if (cityToCheck === cleanestCities[i]) {
+                    matchFound = true;
+                    chapter19Output = "It's one of the cleanest cities!"; 
+                    break;
+                }
+                else if (matchFound === false); {
+                    chapter19Output = "It's not on the list of the cleanest cities.";
+            }
+        }
+            console.log(chapter19Output);
+            chapter19 = document.getElementById('chapter-19');
+            chapter19.innerHTML = chapter19Output
+            }
+    </script>
+
+    <button type="button" class="button" onclick="tellTime()">Chapter 35: Tell The Time</button>
+    <div id="chapter-35"></div>
+    <script>
+        function tellTime() {
+            let now = new Date();
+            let theHr = now.getHours();
+            let theMin = now.getMinutes();
+            let theSecs = now.getSeconds();
+            chapter35Output = `the time is ${theHr}:${theMin}, ${theSecs} second(s)`;
+            console.log(chapter35Output);
+            chapter35 = document.getElementById('chapter-35');
+            chapter35.innerText = chapter35Output
+        }
+     </script>
+    
+    <button type="button" class="button" onclick="Chapter39()">Chapter 39: switch statements</button>
+    <div id="chapter-39"></div>
+    <script>
+        function Chapter39() {
+            now = new Date
+            namesOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+            numberOfWeek = now.getDay();
+            dayOfWeek = namesOfWeek[numberOfWeek]
+            console.log(dayOfWeek)
+
+            switch(dayOfWeek) {
+            case "Sat" :
+                chapter39Output = "Whoopee! Its Saturday!";
+                break;
+            case "Sun" :
+                chapter39Output = "Whoopee! Its Sunday!";
+                break;
+            case "Fri" :
+                chapter39Output = "Hey its Friday!";
+                break;
+            default :
+                chapter39Output = "Shoot me now! Its not the weekend yet.."; 
+            }
+            console.log(chapter39Output);
+            chapter39 = document.getElementById('chapter-39');
+            chapter39.innerText = chapter39Output
+        }
+     </script>
+
+    <button type="button" class="button" onclick="Chapter41()">Chapter 41: while loops</button>
+    <div id="chapter-41"></div>
+    <script>
+        function Chapter41() {
+            // for loop
+            for (var i = 0; i <= 3; i++) {
+                chapter41Output = `for loop alert = ${i}`;
+            }
+
+            console.log(`the for loop output is ${i}`)
+
+            // while loop
+            var is = 0;
+            while (is <= 3) {
+                chapter41Output = `while loop output = ${is}`;
+                is++;
+            }
+            console.log(`the while loop output is ${is}`) 
+            console.log(chapter41Output);
+            chapter41 = document.getElementById('chapter-41');
+            chapter41.innerText = chapter41Output
+        }
+     </script>
+
+    <button type="button" class="button" onclick="chapter45()">Chapter 45: Events on links</button>
+
+    <a href="Javascript:void(0)" onClick="chapter452()">Chapter 45 link</a>
+
+    <div id="chapter-45"></div>
+    <script>
+        function chapter45() {
+        
+        chapter45Output = 'Click the Link!'
+        console.log(chapter45Output);
+        chapters45 = document.getElementById('chapter-45');
+        chapters45.innerText = chapter45Output
+    }
+
+        function chapter452() { 
+            chapter45Output = 'You clicked chapter 45'
+            console.log(chapter45Output);
+            chapters45 = document.getElementById('chapter-45');
+            chapters45.innerText = chapter45Output
+        }
+
+
+    </script>
+
+<button type="button" class="button" onclick="chapter60()">Chapter 60: Child Nodes-Not working</button>
+<div id="chapter-60-data">
+ <!--   <p>Southern Cal is sunny.</p>
+    <p>Northern Cal is rainy.</p>
+    <p>Eastern Cal is desert.</p>
+    <p>Urban NY is crowded.</p>
+    <p>Rural NY is sparse.</p>
+ -->
+</div>
+<div id="chapter-60">
+
+</div>
+
+<script>
+    function chapter60() {
+        let chapter60Data = document.getElementById('chapter-60-data')
+        let p0 = chapter60Data.childNodes[0];
+        let p0contents = p0.innerText;
+        console.log(p0)
+        console.log(p0contents);
+        let chapter60 = document.getElementById('chapter-60');
+        chapter60.innerText = p0contents
+    }
+
+</script>
+
+<button type="button" class="button" onclick="Chapter76()">Chapter 76: Browser Control</button>
+<div id="chapter-76"></div>
+<script>
+    function Chapter76() {
+        var whereWeAt = window.location.href;
+        var theDomain = window.location.hostname;
+        var currentPath = window.location.pathname;
+        var theAnchor = window.location.hash;
+        // window.location.href = "http://www.me.com/1.html#section9";
+        var currentSite = window.location.hostname;
+
+        var destination = "http://" + currentSite + currentPath + "#humidifier";
+        // window.location.href = destination;
+
+        let chapter76OutputText = ('we are at:\n' + whereWeAt + "\n\n" + 
+        'domain:\n' + theDomain + "\n\n" +
+        'path:\n' + currentPath + "\n\n" + 
+        'anchor:\n' + theAnchor + "\n\n" + 
+        'current site:\n' + currentSite + "\n\n" +
+        'destination:\n' + destination)
+        console.log(chapter76OutputText);   
+        chapter76Text = document.getElementById('chapter-76');
+        chapter76Text.innerText = chapter76OutputText;
+        }
+</script>
+
+<button type="button" class="button" onclick="Chapter79()">Chapter 79: Browser Control - Windows</button>
+<div id="chapter-79"></div>
+<script>
+    function Chapter79() {
+       // to open a window
+        var monkeyWindow = window.open();
+        var windowContent = "<h1>Capuchin monkey</h1><p>The word capuchin derives from a group of friars<br>named the Order of Friars Minor Capuchin who wear<br>brown robes with large hoods covering their heads.</p>";
+        monkeyWindow.document.write(windowContent);
+        monkeyWindow.location.assign("http://www.animals.com/capuchin.html");
+        // to close a window
+        monkeyWindow.close()
+
+        console.log(windowContent);
+        console.log(monkeyWindow);
+        chapter79Output = windowContent 
+        chapter79 = document.getElementById('chapter-79');
+        chapter79.innerHTML  = chapter79Output;
+
+        }
+</script>
+
+
+</body>
+</html>

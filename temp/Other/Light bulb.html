@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "http://www.w3schools.com/htmldom/pic_bulboff.gif";
+    } else {
+        image.src = "http://tutch.co.uk/wp-content/uploads/2014/07/bulbon.gif";
+    }
+}
+</script>
+
+<img id="myImage" onclick="changeImage()" src="http://www.w3schools.com/htmldom/pic_bulboff.gif" width="100" height="180">
+
+<p>Click the light bulb to turn on/off the light</p>
+
+</body>
+</html>
+

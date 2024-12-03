@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 46: 6/1/22 and 8/1/22</title>
+</head>
+<body>
+    <h1>Chapter 46: Events: button</h1>
+    <h2>Using a button and an image to trigger an alert</h2>
+    <script>
+    console.log("Chapter 46")
+    console.log("Using an image to trigger an event")
+    function greetTheUser() {
+        alert('Hello world!')
+    }
+   </script> 
+   <!--Using a button to trigger an event-->
+   <input type="button" value="Click"
+    onClick="alert('Hello world!');">
+ 
+   <!--Using an image to trigger an event-->
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGJrrjqWEjlc2jaIYsjm8rVvcFBoTFlTgvIw&usqp=CAU"
+   onClick="alert('Hello world');">
+ 
+   <!--If you want to be more proffessional, use a function-->
+   <img src="button-greet.png"
+   onclick="greetTheUser();">
+    </body>
+</html>

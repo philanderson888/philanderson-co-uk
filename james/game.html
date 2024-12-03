@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James's Game</title>
+    <div id="canvas"></div>
+    <div id="target"></div>
+</head>
+<style>
+   .hidden {display: none;}
+</style>
+<body style="text-align: center;">
+    <div id="hide">
+  <svg height="600" width="600">
+    <circle
+        cx="250"
+        cy="450"
+        r="28"
+        stroke="gray"
+        stroke-width="2" fill="red"
+        onclick="Invisible()"
+        ></circle>
+        </svg>
+     </div>
+        <script>
+            function Invisible() {
+              document.getElementById("hide").className= "hidden";
+            }
+            Math.random(xy)
+     </script>
+         <canvas id="myCanvas" width="200" height="200"></canvas>
+    <script>
+     // Get the canvas element
+     var canvas = document.getElementById("myCanvas");
+      
+      // Draw a circle with a radius of 50 pixels
+      var ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(50, 50, 50, 0, 2 * Math.PI);
+      ctx.fillStyle = "#FF0000";
+      ctx.fill();
+
+      function change() {
+      circle.translate(Math.random() * window.innerWidth, Math.random() * window.innerHeight)
+      }
+    </script>
+
+   
+
+
+
+
+
+
+
+
+
+</body>
+</html>

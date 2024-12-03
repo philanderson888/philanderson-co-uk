@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 29</title>
+</head>
+<body>
+    <h1>Chapter 29: Converting strings to numbers, numbers to strings</h1>
+    <div id="string"></div>
+    <div id="answer"></div>
+    <script>
+    console.log("Chapter 29: Converting strings to numbers, numbers to strings")
+    
+    var integerString = "24"
+    var num = Number(integerString);
+
+    console.log(integerString)
+    console.log(num)
+
+
+    var number = 1234;
+    var numberAsString = number.toString();
+   
+    console.log(number)
+    console.log(numberAsString)
+    
+    var string = "Converting strings to numbers with Number and converting numbers to strings with .toString()"
+
+    document.getElementById(`string`).innerText = string
+
+    let output = `number ${number} as string is ${numberAsString}`
+    document.getElementById(`answer`).innerText = output
+   </script> 
+</body>
+</html>

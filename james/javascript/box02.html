@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+  // initialise
+
+ let player = "player1";
+ 
+ 
+ 
+ function switchplayer() {
+    if (player=="player1")
+    {
+        player="player2";
+    }
+    else if (player=="player2") {
+        player="player1";
+    } 
+ }
+
+
+</script>
+<body>
+
+    <h3 id="playerText">Player 1</h3>
+
+    <input type="button" value="" id="box01" style="height: 100px; width:100px; margin:10;"
+    onclick="box01Clicked()">
+
+    <input type="button" value="" id="box02" style="height: 100px; width:100px"
+    onclick="box02Clicked()">
+    
+    <input type="button" value="" id="hide" style="height: 100px; width:100px"
+    onClick="value='X';">
+
+ <br>
+ 
+    <input type="button" value="" id="hide" style="height: 100px; width:100px"
+    onClick="value='O';">
+
+    <input type="button" value="" id="hide" style="height: 100px; width:100px"
+    onClick="value='X';" > 
+
+    <input type="button" value="" id="hide" style="height: 100px; width:100px"
+    onClick="value='O';">
+
+ <br>
+ 
+    <input type="button" value="" id="hide" style="height: 100px; width:100px"
+    onClick="value='X';">
+
+    <input type="button" value="" id="hide" style="height: 100px; width:100px"
+    onClick="value='O'">
+
+    <input type="button" value="" id="hide" style="height: 100px; width:100px"
+    onClick="value='X'">
+
+    <script>
+        playerText = document.getElementById("playerText")
+        console.log(playerText)
+    box01 = document.getElementById("box01")
+    box01Clicked = () => {
+        console.log("Player 1 clicked")
+        box01.value = 'X';
+        switchplayer()
+        playerText.innerText = "Player 2"
+    }
+
+    playerText = document.getElementById("playerText")
+        console.log(playerText)
+    box02 = document.getElementById("box02")
+    box02Clicked = () => {
+        console.log("Player 2 clicked")
+        box02.value = 'O';
+        switchplayer()
+        playerText.innerText = "Player 1"
+    }
+    </script>
+</body>
+</html>

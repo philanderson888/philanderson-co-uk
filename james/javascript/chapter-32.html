@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 32</title>
+</head>
+<body>
+    <h1>Chapter 32: Extracting parts of the date and time</h1>
+    <script>
+    console.log("Chapter 32: Extracting parts of the date and time")
+
+    console.log("Getting the month ranging from 0 for January and 11 for December")
+    var x = new Date();
+    var currentMonth = x.getMonth();
+    console.log(currentMonth)
+
+    console.log("Getting a number for the day of the month.")
+    var dayOfMonth = x.getDate();
+    console.log(dayOfMonth)
+
+    console.log("Getting the 4-digit number for the year")
+    var currentYr = x.getFullYear();
+    console.log(currentYr)
+
+    console.log("Getting the hour ranging from 0(midnight) to 23(11p.m)")
+    var currentHrs = x.getHours();
+    console.log(currentHrs)
+
+    console.log("Getting the minutes ranging from 0 to 59")
+    var currentMins = x.getMinutes();
+    console.log(currentMins)
+
+    console.log("Getting the seconds ranging from 0 to 59")
+    var currentSecs = x.getSeconds();
+    console.log(currentSecs)
+
+    console.log("Getting the milliseconds ranging from 0 to 999")
+    var currentMills = x.getMilliseconds();
+    console.log(currentMills)
+
+    console.log("Getting the number of milliseconds elapsed since Jan 1, 1970 12pm")
+    var millsSince = x.getTime();
+    console.log(millsSince)
+   </script> 
+</body>
+</html>

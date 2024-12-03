@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 62: 19/2/22</title>
+</head>
+<body>
+    <h1>Chapter 62: The DOM: More ways to target elements</h1>
+    <div id="output1">
+            <div id="output2">
+            <p>London</p>
+            <p>Birmingham</p>
+            <p>Liverpool</p>
+        </div>
+    </div>
+
+    <p>Using .childNode[] you can target an element that is a child of a parent node</p>
+    <p>You can target the first child node by using parentNode.firstChild;</p>
+    <p>You can target the last child node by using parentNode.lastChild;</p>
+    <p>You can also find the parent node by using document.getElementById and assigning it to a variable</p>
+    <p>Nodes have siblings, which are other nodes under the same parent node and you can target these the same
+        way you do to parent nodes but use .nextSibling and .previousSibling instead</p>
+    <script>
+        console.log("Chapter 62")
+        parentNode2 = ["Hello", "Hello2"]
+        parentNode3 = ["Hello", "Hello2", "Hello3"]
+        parentNode4 = ["Hello", "Hello2", "Hello3", "Hello4"]
+        parentNode5 = ["Hello", "Hello2", "Hello3", "Hello4", "Hello5"]
+       var targetNode = parentNode.childNode[0];
+        // Is the same as
+        var targetNode2 = parentNode2.firstChild;
+        // And say there are 3 child nodes
+        var targetNode3 = parentNode3.childNodes[2];
+        // Is the same as
+        var targetNode4 = parentNode4.lastChild;
+
+        // To find the parent node
+        var kidNode = document.getElementById("output2");
+        var pNode = kidNode.parentNode5;
+        document.getElementById("output")
+
+        // You can use "nextSibling" and "previousSibling" to target siblings.
+        var firstEl = document.getElementById("output1");
+        secondEl = firstEl.nextSibling;
+        
+        var firstEl2 = document.getElementById("output1");
+        var nonexistentEl = firstEl.previousSibling;
+        // If there are no other siblings, it is null
+        
+
+    </script>
+</body> 
+</html>

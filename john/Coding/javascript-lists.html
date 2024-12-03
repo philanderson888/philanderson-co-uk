@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+    <style>
+        li{
+            font-size:1.5em;
+        }
+    </style>
+<h1>Lists</h1>
+<body>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ul id="listTwo"> 
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+
+    <ul id="imageList">
+        <li><img src="https://picsum.photos/500/300?random=1" /></li>
+        <li><img src="https://picsum.photos/500/300?random=2" /></li>
+        <li><img src="https://picsum.photos/500/300?random=3" /></li>
+        <li><img src="https://venturebeat.com/wp-content/uploads/2017/07/roblox-1.jpg" width="500" height="300" /></li>
+    </ul>
+
+   
+    <script>
+
+        // dreate an empty list item but don't add it to the page yet
+        let listItem = document.createElement("li")
+        // inside the list item add some text
+        listItem.innerText = "this is an item in a list"
+        // now add the list item onto the page
+        document.getElementById('list').appendChild(listItem)
+
+        for (let item = 100; item <= 110; item++){
+            let listItem = document.createElement("li")
+            listItem.innerText = item
+            document.getElementById('list').appendChild(listItem)
+        }
+
+
+
+
+        let listItems = document.createElement("li")
+        listItems.innerText = "this is an item in a list"
+        document.getElementById("listTwo").appendChild(listItems)
+
+
+
+
+
+        // add images
+        for (let i = 4 ; i <= 14; i++){
+            let image = document.createElement("img")
+            image.src = `https://picsum.photos/400/100?random=${i}`
+            let listItem = document.createElement('li')
+            listItem.appendChild(image)
+            document.getElementById('imageList').appendChild(listItem)
+        }
+
+        for (let i = 4 ; i <= 14; i++){
+            let image = document.createElement("img")
+            image.src = `https://picsum.photos/200/300?random=${i}`
+            let listItem = document.createElement("li")
+            listItem.appendChild(image)
+            document.getElementById('imageList').appendChild(listItem)
+
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

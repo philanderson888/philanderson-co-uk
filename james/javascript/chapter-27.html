@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 27</title>
+</head>
+<body>
+    <h1>Chapter 27: Generating random numbers</h1>
+    <script>
+    console.log("Chapter 27:Generating random numbers")
+    var randomNumber = Math.random();
+    console.log("Generating a random number from 1 - 6")
+    console.log("A random decimal is assigned to bigDecimal")
+    var bigDecimal = Math.random();
+    console.log(bigDecimal)
+    console.log("converts the decimal to a number from 0.0 to 5.9, then adds 1, to make it 6.9 and assigned to improvedNum")
+    var improvedNum = (bigDecimal * 6) + 1;
+    console.log(improvedNum)
+    console.log("numberOfStars rounds the value down to 6 using Math.floor")
+    var numberOfStars = Math.floor(improvedNum);
+    console.log(numberOfStars)
+
+
+    // puzzle from dad
+    /*
+    create a for loop with 600 loops  DONE
+    each loop generate a random number from 1 to 6 as above  DONE
+    print out the number  DONE
+
+    create a new variable 'oneCounter' equal 0 at the start
+    if randomNumber = 1 then add one to the oneCounter (ie oneCounter++)
+    at the end print out `total loops = ${totalLoops} and number of 1's is {oneCounter} so the ratio is ${oneCounter/totalLoops}
+    note : as a guide if we have 600 loops how many should equal 1?  Should be 100 so can check if oneCounter is roughly 100 ...
+    */
+
+    var oneCounter = 0;
+    for (var i = 0; i < 6; i++) {
+        var randomNumber = Math.random();
+        //console.log("Generating a random number from 1 - 6")
+        //console.log("A random decimal is assigned to bigDecimal")
+        var bigDecimal = Math.random();
+        //console.log(bigDecimal)
+        //console.log("converts the decimal to a number from 0.0 to 5.9, then adds 1, to make it 6.9 and assigned to improvedNum")
+        var improvedNum = (bigDecimal * 6) + 1;
+        //console.log(improvedNum)
+        //console.log("numberOfStars rounds the value down to 6 using Math.floor")
+        var numberOfStars = Math.floor(improvedNum);
+        console.log(numberOfStars)
+
+
+    }
+
+
+   </script> 
+</body>
+</html>

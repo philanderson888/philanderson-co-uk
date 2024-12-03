@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 57: 18/2/22</title>
+</head>
+<body>
+    <h1>Chapter 57: Target some elements by Tag name</h1>
+        <ul>
+            <li>This text will be changed</li>
+            <li>This text wont be changed</li>
+        </ul>
+    <button onclick="change()">Change text</button>
+    <div id="rules"></div>
+    <script>
+        console.log("Chapter 57")
+
+        function change() {
+        const text = document.getElementsByTagName("UL")[0];
+        // This statement reads the contents and assigns the string to it.
+        var text2 = text.getElementsByTagName("li")[0].innerHTML = "This is the changed text";
+        }
+
+        
+        // This collects all the paragraphs in a particular div
+        var e = document.getElementById("rules");
+        var paragraphs = e.getElementsByTagName("li");
+        /*
+        // Then you can write
+        e.getElementById("UL")
+        //instead of
+        document.getElementById("UL")
+        */
+    </script>
+</body> 
+</html>

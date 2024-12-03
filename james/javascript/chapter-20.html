@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 20</title>
+</head>
+<body>
+    <h1>Chapter 20: for loops nested</h1>
+    <script>
+    console.log("Chapter 20: for loops nested")
+
+    // simple nested loop
+    for(let i=0;i<5;i++){
+        for(let j=0;j<5;j++){
+            console.log(`the value of i is ${i} and j is ${j}`)
+        }
+    }
+
+    console.log("Inner loop and outer loop")
+
+    let firstnames = ["James ", "John ", "Hannah ", "Philip ", "Christa "];
+    let lastnames = ["Anderson ", "Baxter ", "Johnson ", "Smith ", "Jones "];
+    let fullnames = [];
+    for (let i = 0; i < firstnames.length; i++) {
+        for (let j = 0; j < lastnames.length; j++) {
+            fullnames.push(firstnames[i] + lastnames[j]);
+        }
+    }
+
+    console.log("It goes through all the first names and uses every last name for each one.")
+
+    for (var j = 0; j < 10; j++) {
+        for (var k = 0; k < 10; k++) {
+        }
+    }
+
+    var x = 0;
+    for (var j = 0; j < 10; j++) {
+        for (var k = 0; k < 10; k++) {
+            x = j + k;
+            console.log(`j is ${j}, k is ${k}, x is ${x}`) 
+
+        }
+    }
+
+    /*
+    Here are 4 lines of code.
+    var animals = ["goat", "cat", "crow"];
+    var products = ["milk", "cheese", "burger"];
+    var foodItems = [];
+    var k = 0;
+
+    Continue the code to create nested loops. 
+
+    The inner loop concatenates each of the elements of 
+    animals with each of the elements of products, with 
+    no space separating them. 
+
+    Accumulate the combinations in foodItems. 
+
+    The counter for foodItems is k. 
+
+    Limit the number of loops by the length of each array.
+    
+    
+    
+    */
+
+    var animals = ["goat", "cat", "crow"];
+    var products = ["milk", "cheese", "burger"];
+    var foodItems = [];
+    var k = 0;
+    for (var i = 0; i < animals.length; i++) {
+        for (var j = 0; j < products.length; j++) {
+            
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </script> 
+</body>
+</html>

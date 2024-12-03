@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 36</title>
+</head>
+<body>
+    <h1>Chapter 36: Functions: Passing them data</h1>
+    <script>
+    console.log("Chapter 36")
+    welcomeUser("This is a message from a function");
+    console.log("A string inside the parenthesis is called an argument")
+
+    function welcomeUser(welcome) {
+        alert(welcome);
+    }
+    console.log("A variable inside the parenthesis is called a parameter")
+    
+    var welcome = "This is a message when the function is called"
+    welcomeUser(welcome);   
+
+    console.log("Using numbers as a parameter")
+    function showBigNum(almostAThousand) {
+    var almostAThousand = 999;
+    showBigNum(almostAThousand);
+    }
+
+    function showMessage(m, string, num ) {
+        alert(m + string + num);
+    }
+    var month = "March";
+    showMessage(month, "`s winner number is ", 23);
+
+    console.log("A function call has parenthesis which takes an argument in the parenthesis")
+   </script> 
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 54: 16/2/22</title>
+</head>
+<body>
+    <h1>Chapter 54: Swapping images and setting classes</h1>
+    <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg" id="before">
+    <p>
+        <button type="button" onclick="swapPic()">Swap image</button>
+    </p>
+    <p>
+        <button type="button" onclick="swapPicBack()">Swap image back</button>
+    </p>
+    <p>
+        <a href="chapter-54-2.html" id="link1">This link refreshes the page</a>
+    </p>
+    <script>
+        console.log("Chapter 54")
+        function swapPic() {
+            var pic = document.getElementById("before");
+            pic.width = 700;
+            pic.height = 500; 
+            pic.src = "https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg";
+        }
+        function swapPicBack() {
+            var pic = document.getElementById("before"); 
+            pic.src = "https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg";
+        }
+    </script>
+<script>
+    function getAddress() {
+        var link = document.getElementById("link1");
+        var address = link.href;
+    }
+</script>
+<script>
+    function getAddress() {
+        var frm = document.getElementById("link1");
+        frm.className = "jumbo";
+        document.getElementById("link1").innerText = frm
+    }
+</script>
+</body> 
+</html>

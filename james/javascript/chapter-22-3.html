@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 22</title>
+</head>
+<body>
+    <h1>Chapter 22</h1>
+    <div id="colour"></div>
+    <div id="first"></div>
+    <div id="other"></div>
+    <div id="three"></div>
+    <div id="sliced"></div>
+    <div id="explanation"></div>
+    <script>
+    var colourToCheck = "Black"
+    var firstChar = "B, the first letter of Black"
+    var otherChars = `lack, the rest of the word of Black`
+    var threeWords = "Black and Orange, more than one word printed"
+    var slicedWord = "Purple, used .slice to make it urpl when it is originally Purple"
+    
+    var explanation = `I am testing to use document.getElementById and I put "Black" onto the screen then the first letter of black
+    and then the rest of the word. I then tested to do more than one word then i used .slice to do part of a word (Purple is urpl)`
+    document.getElementById(`colour`).innerText = colourToCheck
+    document.getElementById(`first`).innerText = firstChar
+    document.getElementById(`other`).innerText = otherChars
+    document.getElementById(`three`).innerText = threeWords
+    document.getElementById(`sliced`).innerText = slicedWord.slice(1,64);
+    document.getElementById(`explanation`).innerText = explanation
+
+   </script> 
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 56: 18/2/22</title>
+</head>
+<body>
+    <h1>Chapter 56: Target all elements by tag name</h1>
+    <script>
+        console.log("Chapter 56")
+
+        // This finds all the paragraphs and assigns them to par
+        var par = document.getElementsByTagName("p");
+        var textInMiddleParagraph = par[1].innerHTML;
+
+        // This loop assigns a font family to all the paragraphs
+        for (var i = 0; i < par.length; i++) {
+            par[i].style.fontFamily = "Verdana, Geneva, sans-serif";
+        }
+        // This statement assigns all the images in the document to "pics"
+        var pics = document.getElementsByTagName("img");
+
+        // This statement assings all the divs in the document to "divs"
+        var divs = document.getElementsByTagName("div");
+
+        // This statement assigns all the unordered lists to "ulists"
+        var ulists = document.getElementsByTagName("ul");
+    </script>
+            <p>This bed is too small.</p>
+            <p>This bed is too big</p>
+            <p>This bed is just right</p>
+</body> 
+</html>

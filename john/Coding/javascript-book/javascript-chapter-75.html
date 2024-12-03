@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 75</title>
+</head>
+<body>
+    <h1>Chapter 75: Checking object properties</h1>
+    <h2>February 17th 2022</h2>
+<script>
+    var gotTheProperty = "price" in plan1;
+    var gotTheProperty = "location" in plan1;
+    var gotTheProperty = "calcAnnual" in plan1;
+
+    var listOfProperties = [];
+    for (var prop in plan1) {
+      if (plan1.hasOwnProperty(prop)) {
+        listOfProperties.push(prop);
+        } 
+    }
+    var isOwnedProperty = plan1.hasOwnProperty("price");
+</script>
+</body>
+</html>

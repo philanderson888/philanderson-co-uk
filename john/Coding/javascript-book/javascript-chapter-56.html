@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 56</title>
+</head>
+<body>
+    <h1>Chapter 56: Getting Elements By Tag Name</h1>
+    <script>
+    getElementById(theid).style.fontsize = "2em";
+
+    var par = document.getElementsByTagName("p");
+    var textInMiddleParagraph = par[1].innerHTML = "this SUV is too big.";
+
+    for (var i = 0; i < par.length;i++) {
+        par[i].style.fontFamily = "Verdana, Geneva, sans-serif";  
+    }
+
+    var pics = document.getElementsByTagName("img");
+    var divs = document.getElementsByTagName("div");
+    var ulists = document.getElementsByTagName("ul");
+    </script>
+
+    <p>This bed is too small.</p>
+    <p>This bed is too big.</p>
+    <p>This bed is just right.</p>
+
+
+</body>
+</html>

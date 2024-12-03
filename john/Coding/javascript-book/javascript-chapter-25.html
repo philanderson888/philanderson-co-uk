@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 25</title>
+</head>
+<body>
+  <h1>Chapter 25: replacing text</h1>
+  <h2>June 14th 2021</h2>
+  <div id="chapter-25"></div>
+  <div id="chapter-25a"></div>
+  <div id="chapter-25b"></div>
+  <div id="chapter-25c"></div>
+  <script>
+    var text = ("Hi im bobby and Happy Birthday to you!")
+    var newText = text.replace("Hi im bobby and Happy Birthday to you!", "Hi im John and i replaced the old sentence");
+    console.log(text)
+    console.log(newText)
+    var replaceText = prompt("Type what you want to replace 'hi im bobby' with:")
+    var newerText = text.replace(/Hi im bobby/g, "Hi im John (bobby is gone)");
+    let otherText = text.replace(/Hi im bobby/g, replaceText)
+    console.log(newerText)
+
+    chapter25 = document.getElementById("chapter-25")
+    chapter25a = document.getElementById("chapter-25a")
+    chapter25b = document.getElementById("chapter-25b")
+    chapter25c = document.getElementById("chapter-25c")
+    chapter25.innerText = text
+    chapter25a.innerText = newText
+    chapter25b.innerText = newerText
+    chapter25c.innerText = otherText
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 64: 20/3/22</title>
+</head>
+<body>
+    <h1>Chapter 64: The DOM: Counting Elements</h1>
+    <script>
+    console.log("Chapter 64")
+   // Make collection of all <li> elements
+    var liElements = getElementByTagName("li");
+    // Checks how many <li> elements there are
+    var howManyLi = liElements.length;
+    // Then cycle through the collection looking for empty <li>'s and enter text.
+    for (var i = 0; i < howManyLi; i++) {
+        if (liElements[i].innerHTML === "") {
+            liElements[i].innerHTML = "coming soon";
+        }
+    }
+
+    // You can make a collection of all the child nodes in a targeted node
+    var parentNode = document.getElementById("d1");
+    var nodeList = parentNode.childNodes;
+
+    // You can get the number of items in the collection
+    var hoyManyChildren = nodeList.length;
+
+    // Target the amount of images
+    var numberPics = 0;
+    for (var i = 0; i < howManyKids; i++) {
+        if (nodelist[i].nodeName.toLowerCase() === "img") {
+            numberPics++;
+        }
+    }
+   </script> 
+</body>
+</html>

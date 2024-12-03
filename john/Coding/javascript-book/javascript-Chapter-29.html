@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 29</title>
+</head>
+<body>
+    <h1>Chapter 29: converting numbers</h1>
+    <h2>August 25th 2021</h2>
+    <div id="chapter-29"></div>
+    <div id="chapter-29a"></div>
+    <div id="chapter-29b"></div>
+    <div id="chapter-29c"></div>
+
+    <script>
+
+        let integerString = "24";
+        let num = Number(integerString);
+
+        let floatingNumString = "24.9876"
+        let num2 = Number(floatingNumString);
+        console.log(`an integer with decimals is ${num2}`);
+        Output1 = "an integer with decimals is " + num2
+
+        let numberAsNumber = 1234;
+        let numberAsString = numberAsNumber.toString();
+        console.log(`1234 converted to a string, using .toString = ${numberAsString}`);
+        Output2 = "1234 converted to a string, using .toString() = " + numberAsString
+
+        chapter29Output = "Using number(), it converts anything in the brackets to a number."
+        chapter29Output2 = "It doesnt matter if the number is an integer or float or string."
+
+        chapter29 = document.getElementById("chapter-29")
+        chapter29.innerText = chapter29Output
+        chapter29a = document.getElementById("chapter-29a")
+        chapter29a.innerHTML = chapter29Output2 + "<br></br>"
+        chapter29b = document.getElementById("chapter-29b")
+        chapter29b.innerText = Output1
+        chapter29c = document.getElementById("chapter-29c")
+        chapter29c.innerText = Output2
+    </script>
+</body>
+</html>

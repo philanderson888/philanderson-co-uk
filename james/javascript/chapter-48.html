@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 48: 19/1/22</title>
+</head>
+<body>
+    <h1>Chapter 48: Events: Fields</h1>
+    <div id="input"></div>
+    <div id="input2"></div>
+    <div id="input3"></div>
+    <div id="input4"></div>
+    <div id="input5"></div>
+    <script>
+    console.log("Chapter 48")
+    console.log("Making the field box go yellow when a user clicks on it with onFocus")
+    console.log("Making it go back to white afterwards with onBlur")
+   </script> 
+   Email:<br>
+   <input type="text" size="30"
+   onFocus="this.style.backgroundColor='yellow';"
+   onBlur="this.style.backgroundColor='white';">
+
+   <script>
+    function makeFieldYellow() {
+       document.getElementById("input").style.backgroundColor = "Yellow";
+    }
+   document.getElementById("input").innerHTML="<input type='text' size='28' onfocus=makeFieldYellow(); onBlur='this.style.backgroundColor='white';' value='Click me'>"
+
+   </script>
+    <p>Making the background turn a different colour</p>
+    <button type="button" class="button" size=30 onClick="this.style.backgroundColor='skyblue';">This will turn light blue when you click on it</button>
+    <br>
+
+    <title>Changing background Colour</title>
+
+<h1 style="color:blueviolet">Changing Background Colour</h1>
+<p id="UP" style="font-size: 32px;
+ font-weight: bold;"></p>
+<button onclick="Run()">Change</button>
+<p id="DOWN" style="color: rgb(255, 0, 0); 
+font-size: 50px; 
+font-weight: bolder;"></p>
+ <script>
+    let up = document.getElementById("UP");
+    let down = document.getElementById("DOWN"); 
+    let str = "Click on the button to change the background colour"
+    up.innerHTML = str;
+    function changeColour(colour) {
+        document.body.style.backgroundColor = colour;
+     }
+    function Run() {
+        changeColour("rgb(255, 148, 0)");
+        down.innerHTML = "Background Colour has been changed";
+    }
+ </script>
+</body>
+</body>
+</html>

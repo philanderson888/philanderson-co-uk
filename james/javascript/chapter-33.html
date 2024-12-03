@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 33</title>
+</head>
+<body>
+    <h1>Chapter 33:Specifying a date and time</h1>
+    <div id="Explanation"></div>
+    <script>
+    console.log("Chapter 33: Specifying a date and time")
+    
+    var today = new Date();
+    var doomsday = new Date("June 30, 2035");
+    var msToday = today.getTime
+    var msDoomsday = doomsday.getTime();
+    var msDiff = msDoomsday - msToday;
+    var dDiff = msDiff / (1000 * 60 * 60 * 24);
+    dDiff = Math.floor(dDiff);
+    var Explanation = `Getting the time of present day, it is ${today}`
+    document.getElementById(`Explanation`).innerText = Explanation
+   </script> 
+</body>
+</html>

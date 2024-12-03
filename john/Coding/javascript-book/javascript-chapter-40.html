@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 40</title>
+</head>
+<body>
+    <h1>Chapter 40: Days of week</h1>
+    <h2>September 2nd 2021</h2>
+    <div id="chapter-40"></div>
+    <script>
+        now = new Date
+        namesOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        numberOfWeek = now.getDay();
+        dayOfWeek = namesOfWeek[numberOfWeek -1]
+
+        // How to do it with an If statement
+
+        // if (dayOfWeek ==="Sat" || dayOfWeek === "Sun") {
+        //     alert("Whoopee!");
+        // }
+        // else if (dayOfWeek === "Fri") {
+        //     alert("TGIF!");
+        // }
+        // else {
+        //     alert("Shoot me now!");
+        // }
+
+        // A switch statement
+
+        switch(dayOfWeek) {
+        case "Sat" :
+            alert("Whoopee! Its Saturday!");
+            chapter40Output = "Whoopee! Its Saturday!";
+            break;
+        case "Sun" :
+            alert("Whoopee! Its Sunday!");
+            chapter40Output = "Whoopee! Its Sunday!"
+            break;
+        case "Fri" :
+            alert("Hey its Friday!");
+            chapter40Output = "Hey its Friday!"
+            break;
+        default :
+            alert("Shoot me now! Its not the weekend yet..");
+            chapter40Output = "Shoot me now! Its not the weekend yet..";
+        }
+
+        chapter40 = document.getElementById("chapter-40")
+        chapter40.innerText = chapter40Output
+    </script>
+
+    <!-- OUTPUT: (Same as chapter 39)
+        Chapter 39: days of week
+        September 2nd 2021
+
+        Shoot me now! Its not the weekend yet.
+    -->
+</body>
+</html>

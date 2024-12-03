@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 34</title>
+</head>
+<body>
+    <h1>Chapter 34: Setting dates</h1>
+    <h2>August 30th 2021</h2>
+    <div id="chapter-34"></div>
+    <div id="chapter-34b"></div>
+
+    <script>
+
+    let d = new Date();
+    d.setFullYear(2001);
+    d.setMonth(11);
+    d.setDate(15);
+    d.setHours(13);
+    d.setMinutes(0o5)
+    d.setSeconds(35)
+    d.setMilliseconds(824);
+    console.log(`its 15th December 2001, 1:05:35:824 pm`);
+    chapter34Output = `its 15th December 2001, 1:05:35:824 pm`
+    console.log(`${d}`)
+    chapter34Outputb = d
+
+    chapter34 = document.getElementById("chapter-34")
+    chapter34.innerText = chapter34Output
+    chapter34b = document.getElementById("chapter-34b")
+    chapter34b.innerText = chapter34Outputb
+    </script>
+
+    <!-- OUTPUT:
+        
+        Chapter 34: Setting dates
+August 30th 2021
+its 15th December 2001, 1:05:35:824 pm
+Sat Dec 15 2001 13:05:35 GMT+0000 (Greenwich Mean Time)
+-->
+</body>
+</html>

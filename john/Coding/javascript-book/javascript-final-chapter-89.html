@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 89</title>
+    <style>
+      .box{
+        width:100px;
+        height:100px;
+        background-color: aquamarine;
+        margin:10px;
+        display: inline-block;
+      }
+    </style>
+</head>
+<body>
+<h1>Chapter 89: Handling events with javascript</h1>
+<h2>February 19th 2022</h2>
+<input type="button" value="Click" id="button1"/> 
+<input type="button" value="get-smaller" id="get-smaller"/> 
+<div></div>
+<img src="https://easydrawingart.com/wp-content/uploads/2019/08/How-to-draw-Bugs-Bunny.jpg" id="i12" width="150" height="150" />
+<div class="box" id="box1"></div>
+<div class="box" ></div>
+<div class="box" ></div>
+<script>
+   // elements
+   var b1 = document.getElementById("button1").onclick = sayHello;
+   var getSmallerButton = document.getElementById("get-smaller")
+   var box1 = document.getElementById("box1")
+   var image = document.getElementById("i12");
+  // events
+   image.onmouseover = getBigger;
+   image.onmouseout = swapPictureBack;
+   getSmallerButton.onclick = getSmaller;
+   box1.onclick = getBiggerBox;
+   box1.onmouseover = getBiggerBox;
+  // functions
+   function sayHello() {
+     console.log("Hi there.")
+     image.width=100;
+     image.height=100;
+   }
+
+   function getSmaller() {
+     console.log("getting smaller")
+     image.width=image.width*0.9
+     image.height=image.height*0.9
+   }
+
+    function getBigger() {
+      console.log("Mouse over image")
+      image.width = image.width*1.1
+      image.height = image.height*1.1
+      image.src="https://www.thechildrensmediafoundation.org/wp-content/uploads/2020/07/characterArt-bugsbunny-LT.png"
+    }
+
+    function getBiggerBox() {
+      console.log("get bigger box")
+      console.log('box1 width ' + box1.style.width)
+      console.log(box1)
+      box1.style.width = box1.style.width+10;
+      console.log('box1 width ' + box1.style.width)
+    }
+
+
+    function swapPictureBack() {
+      console.log("Mouse out")
+    }
+
+
+</script>
+</body>
+</html>

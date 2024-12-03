@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 63: 23/2/22</title>
+</head>
+<body>
+    <h1>Chapter 63: The DOM: Getting a targets name</h1>
+    <script>
+        console.log("Chapter 63")
+        // You can get the name of a node
+        var parent = document.getElementById("div1");
+        var target = parent.firstChild;
+        nName = target.nodeName;
+
+        // If its a text node, you can find out its value this way
+        var parent = document.getElementById("div1");
+        var target = parent.firstChild;
+        var nTextContext = target.nodeValue;
+        
+        // An element node has a name but no value, it is assigned "null"
+        // innerHTML is the inside of the <h2>
+        // Its good to standardize the case when testing for names
+        if (targetNode.nodeName.toLowerCase() === "img") {
+        }
+        
+         // If this is the markup, the node value is "Do" (under script)
+    </script>
+    <h2>Do <em>not</em> hit!</h2>
+</body> 
+</html>
